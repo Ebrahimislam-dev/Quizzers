@@ -1,7 +1,16 @@
-import '../styles/globals.css'
+import BottomHeader from "../Components/BottomHeader/BottomHeader";
+import "../styles/globals.css";
 
 function MyApp({ Component, pageProps }) {
-  return <Component {...pageProps} />
+  return (
+    <div className="main">
+      <Component {...pageProps} />
+
+      <section className="">
+        <BottomHeader></BottomHeader>
+      </section>
+    </div>
+  );
 }
 
-export default MyApp
+export default MyApp;
