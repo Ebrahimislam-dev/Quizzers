@@ -1,6 +1,6 @@
 .rewardpage {
   width: 100%;
-  min-width: 375px;
+  max-width: 375px;
   height: 100%;
   overflow-y: scroll;
   background-color: #f9fcff;

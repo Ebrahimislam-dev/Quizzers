@@ -23,7 +23,7 @@ export default function faqPage() {
           </a>
         </Link>
       </div>
-      <div className="mt-6" >
+      <div className="mt-6">
         <Accordion className=" bg-white border-2" defaultExpanded="true ">
           <AccordionSummary
             expandIcon={<ExpandMoreIcon />}
@@ -31,13 +31,12 @@ export default function faqPage() {
             id="panel1a-header"
             className=" flex justyfy-between"
           >
-            <Typography>Accordion 1</Typography>
+            <Typography>কুইজার্স রিওয়ার্ড কি? </Typography>
           </AccordionSummary>
           <AccordionDetails>
             <Typography>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-              Suspendisse malesuada lacus ex, sit amet blandit leo lobortis
-              eget.
+              আপনি কুইজার্স নিয়মিত ব্যবহার করে পয়েন্ট অর্জন করতে পারবেন এবং
+              আপনার ব্যবহারযোগ্য পয়েন্ট ব্যয় করে দারুন সব রিওয়ার্ড পেতে পারেন
             </Typography>
           </AccordionDetails>
         </Accordion>
@@ -47,13 +46,14 @@ export default function faqPage() {
             aria-controls="panel2a-content"
             id="panel2a-header"
           >
-            <Typography>Accordion 2</Typography>
+            <Typography>
+              কুইজার্স রিওয়ার্ড ব্যবহারকারী হিসাবে আমি কিভাবে উপকৃত হবো ?
+            </Typography>
           </AccordionSummary>
           <AccordionDetails>
             <Typography>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-              Suspendisse malesuada lacus ex, sit amet blandit leo lobortis
-              eget.
+              আপনি কুইজার্স নিয়মিত ব্যবহার করে পয়েন্ট অর্জন করতে পারবেন এবং
+              আপনার ব্যবহারযোগ্য পয়েন্ট ব্যয় করে দারুন সব রিওয়ার্ড পেতে পারেন
             </Typography>
           </AccordionDetails>
         </Accordion>

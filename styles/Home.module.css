@@ -8,7 +8,8 @@
   max-width: 375px;
   height: 100%;
   overflow-y: scroll;
-  background:#F9FCFF;
+  border: 5px solid red;
+  background: #f9fcff;
   position: relative;
   /* border: 2px solid red; */
 }
