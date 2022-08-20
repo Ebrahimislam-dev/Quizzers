@@ -1,4 +1,4 @@
-import QuizQus from "../../Components/HomePage/Quiz/QuizQus";
+import QuizQus from "../Components/HomePage/Quiz/QuizQus";
 
 function quiz() {
   return (

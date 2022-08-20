@@ -25,12 +25,12 @@ function QuizQus() {
   }));
   return (
     <div className={`${style.packagepage} border-2 px-5 `}>
-      <div className="  pb-10" style={{ height: "100%" }}>
+      <div className="pb-10 " style={{ height: "100%" }}>
         <div>
           <Link href="category">
             <a>
-              <div className="flex items-center justify-between   pt-3 ">
-                <div className="flex items-center gap-4   ">
+              <div className="flex items-center justify-between pt-3 ">
+                <div className="flex items-center gap-4 ">
                   <Image src={lefticon} alt="" />
                   <p
                     className="text-2xl font-medium "
@@ -40,7 +40,7 @@ function QuizQus() {
                   </p>
                 </div>
                 <div style={{ background: "#EBEBEB", borderRadius: "8px" }}>
-                  <button className=" text-xs font-medium  px-3 py-2">
+                  <button className="px-3 py-2 text-xs font-medium ">
                     +10 Point
                   </button>
                 </div>
@@ -48,48 +48,48 @@ function QuizQus() {
             </a>
           </Link>
         </div>
-        <div className=" mt-6">
+        <div className="mt-6 ">
           <Box sx={{ flexGrow: 1 }}>
             <BorderLinearProgress variant="determinate" value={70} />
           </Box>
         </div>
         <div className=" mt-9">
-          <Image className=" " src={paddaBridge} alt="icon" />
+          <Image className="" src={paddaBridge} alt="icon" />
         </div>
 
-        <div className=" mt-8">
-          <p className=" font-medium text-sm text-gray-300 tracking-wider">
+        <div className="mt-8 ">
+          <p className="text-sm font-medium tracking-wider text-gray-300 ">
             QUESTION 1 OF 150
           </p>
-          <h4 className=" text-xl font-medium pt-2">
+          <h4 className="pt-2 text-xl font-medium ">
             পদ্মা সেতুর পাইলিং গভীরতা কত ?
           </h4>
         </div>
         <div
-          className=" p-4 mt-10 bg-white shadow-sm text-center"
+          className="p-4 mt-10 text-center bg-white shadow-sm "
           style={{ border: "1.2px solid #D3D3D3", borderRadius: "14px" }}
         >
-          <h2 className=" text-xl font-medium">৩৮৩ ফুট</h2>
+          <h2 className="text-xl font-medium ">৩৮৩ ফুট</h2>
         </div>
         <div
-          className=" p-4 mt-6 bg-white shadow-sm text-center"
+          className="p-4 mt-6 text-center bg-white shadow-sm "
           style={{ border: "1.2px solid #D3D3D3", borderRadius: "14px" }}
         >
-          <h2 className=" text-xl font-medium">৩৮৭ ফুট</h2>
+          <h2 className="text-xl font-medium ">৩৮৭ ফুট</h2>
         </div>
-        <p className=" text-xs font-normal  text-center mt-7">
+        <p className="text-xs font-normal text-center mt-7">
           সঠিক উত্তর বাছাই করুন
         </p>
         <Link href="congratulations">
           <a>
             <div className={`${style.commonButton} `}>
-              <button className=" ">সাবমিট</button>
+              <button className="">সাবমিট</button>
             </div>
           </a>
         </Link>
         <p
-          className=" font-medium text-sm pb-8 pt-5 text-center"
-          style={{ color: "#495C83" }}
+          className="pt-5 pb-8 text-sm font-semibold text-center text-indigo-800 cursor-pointer hover:font-bold"
+          // style={{ color: "#495C83" }}
         >
           Skip
         </p>

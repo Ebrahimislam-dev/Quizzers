@@ -21,6 +21,7 @@ const Root = styled("div")(({ theme }) => ({
   justifyContent: "center",
   alignItems: "center",
   // width: "300px",
+ 
   height: "100%",
   backgroundColor:
     theme.palette.mode === "light"
@@ -47,6 +48,7 @@ const PointDrawer = (props) => {
           ".MuiDrawer-root > .MuiPaper-root": {
             height: `calc(60% - ${drawerBleeding}px)`,
             overflow: "visible",
+            
           },
         }}
       />
@@ -81,10 +83,12 @@ const PointDrawer = (props) => {
             pb: 2,
             height: "100%",
             overflow: "auto",
+         
           }}
         >
-          <div className="flex flex-col items-center justify-center text-center gap-y-3">
-            <p className="text-2xl font-medium ">পর্যাপ্ত পয়েন্ট নেই</p>
+          <div className="flex flex-col items-center justify-center text-center gap-y-3 ">
+            <div className={`${styles.drawercurve}  `}></div>
+            <p className="text-2xl mt-5 font-medium ">পর্যাপ্ত পয়েন্ট নেই</p>
             <Image src={rewardimage} alt="rewardimage" />
             <p className="text-sm font-medium">
               রিয়ার্ড সংগ্রহ করার জন্য আপনার পয়েন্ট নেই। নিয়মিত কুইজাস গেম খেলে

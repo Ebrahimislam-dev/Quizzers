@@ -22,8 +22,8 @@ const HomePage = () => {
         <Header></Header>
       </section>
       <section>
-        <div className="relative pb-10 px-7  ">
-          <div className="absolute shadow-sm flex items-center justify-between px-5 bg-white w-80 sm:w-64 rounded-2xl -top-20 py-7 ">
+        <div className="relative pb-10 px-7 ">
+          <div className="absolute flex items-center justify-between px-5 bg-white shadow-md w-80 sm:w-64 rounded-2xl -top-20 py-7 ">
             <div>
               <h6
                 className="text-xs font-medium leading-5 "
@@ -49,18 +49,18 @@ const HomePage = () => {
         </div>
       </section>
       <section className="pb-16 sm:pb:2">
-        <Link href="home/packagepage">
+        <Link href="packagepage">
           <a>
             <div className="flex items-center justify-between pl-6 pr-10 cursor-pointer pt-9">
               <p className="text-base font-semibold leading-5 ">
                 কুইজ ক্যাটাগরি পছন্দ করুন
               </p>
-              <Image className=" " src={righticonBlack} alt="icon" />
+              <Image className="" src={righticonBlack} alt="icon" />
             </div>
           </a>
         </Link>
 
-        <div className="grid grid-cols-3 pl-6 pr-5 gap-x-3 pt-5 gap-y-4 ">
+        <div className="grid grid-cols-3 pt-5 pl-6 pr-5 gap-x-3 gap-y-4 ">
           <div className={style.category}>
             <Image src={sporticon} alt="sporticon" />
             <p>খেলাধুলা</p>

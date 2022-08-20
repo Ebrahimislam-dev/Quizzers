@@ -12,11 +12,11 @@ import entertainmenticon from "../../Media/icons/entertainment.png";
 function Categorypage() {
   return (
     <div className={`${style.packagepage} border-2 px-5 `}>
-      <div className="  pb-10" style={{ height: "100%" }}>
+      <div className="pb-10 " style={{ height: "100%" }}>
         <div>
           <Link href="/">
             <a>
-              <div className="flex items-center gap-4  pt-3 ">
+              <div className="flex items-center gap-4 pt-3 ">
                 <Image src={lefticon} alt="" />
                 <p
                   className="text-2xl font-medium "
@@ -28,28 +28,30 @@ function Categorypage() {
             </a>
           </Link>
         </div>
-        <div className="grid grid-cols-2 px-4 gap-x-3  pt-9 gap-5 ">
-          <div className={style.categoryItem}>
+        <div className="grid grid-cols-2 gap-5 px-4 gap-x-3 pt-9 ">
+          <div
+            className={`${style.categoryItem} active:border-slate-300  border-2 shadow-sm `}
+          >
             <Image src={sporticon} alt="sporticon" />
             <p>খেলাধুলা</p>
           </div>
-          <div className={style.categoryItem}>
+          <div className={`${style.categoryItem} active:border-slate-300  border-2 shadow-sm `}>
             <Image src={infoicon} alt="infoicon" />
             <p>তথ্যমূলক</p>
           </div>
-          <div className={`gap-y-2 ${style.categoryItem}`}>
+          <div className={`gap-y-2 ${`${style.categoryItem} active:border-slate-300  border-2 shadow-sm `}`}>
             <Image src={googlilicon} alt="googlilicon" />
             <p>গুগলি</p>
           </div>
-          <div className={style.categoryItem}>
+          <div className={`${style.categoryItem} active:border-slate-300  border-2 shadow-sm `}>
             <Image src={globalicon} alt="globalicon" />
             <p>আন্তর্জাতিক</p>
           </div>
-          <div className={style.categoryItem}>
+          <div className={`${style.categoryItem} active:border-slate-300  border-2 shadow-sm `}>
             <Image src={bangladesicon} alt="bangladesicon" />
             <p> বাংলাদেশ</p>
           </div>
-          <div className={`gap-y-2 ${style.categoryItem}`}>
+          <div className={`gap-y-2 ${`${style.categoryItem} active:border-slate-300  border-2 shadow-sm `}`}>
             <Image src={entertainmenticon} alt="entertainmenticon" />
             <p>এন্টারটেইন</p>
           </div>
@@ -58,7 +60,7 @@ function Categorypage() {
         <Link href="quiz">
           <a>
             <div className={`${style.commonButton} mb-10`}>
-              <button className=" ">খেলা শুরু করুন</button>
+              <button className="">খেলা শুরু করুন</button>
             </div>
           </a>
         </Link>

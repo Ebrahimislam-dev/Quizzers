@@ -1,4 +1,4 @@
-import Packageindex from "../../Components/HomePage/Packageindex";
+import Packageindex from "../Components/HomePage/Packageindex";
 
 function packagepage() {
   return (

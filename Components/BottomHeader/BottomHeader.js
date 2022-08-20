@@ -39,7 +39,7 @@ export default function BottomHeader() {
         defaultValue="/"
         value={value}
         onChange={handleChange}
-        className={classes.root}
+        // className={classes.root}
       >
         {" "}
         <BottomNavigationAction
@@ -58,8 +58,8 @@ export default function BottomHeader() {
           icon={<ExtensionOutlinedIcon />}
         />
         <BottomNavigationAction
-          label="Menu"
-          value="Menu"
+          label="Profile"
+          value="profile"
           icon={<DragHandleIcon />}
         />
       </BottomNavigation>

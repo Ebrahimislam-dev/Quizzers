@@ -1,6 +1,6 @@
 .rewardpage {
   width: 100%;
-  max-width: 375px;
+  min-width: 375px;
   height: 100%;
   overflow-y: scroll;
   background-color: #f9fcff;
@@ -61,4 +61,26 @@
 }
 .drawer {
   max-width: 375px;
+}
+.drawercurve {
+  background: #fff;
+  width: 67px;
+  z-index: 19;
+  position: absolute;
+  top: -8px;
+  height: 20px;
+  left: 48%;
+  border-radius: 50%;
+}
+@media only screen and (min-device-width: 375px) and (max-device-width: 480px) {
+  .drawercurve {
+    background: #fff;
+    width: 67px;
+    z-index: 19;
+    position: absolute;
+    top: -8px;
+    height: 20px;
+    left: 44%;
+    border-radius: 50%;
+  }
 }

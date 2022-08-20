@@ -1,4 +1,4 @@
-import CongratulationsPage from "../../Components/HomePage/Quiz/CongratulationsPage";
+import CongratulationsPage from "../Components/HomePage/Quiz/CongratulationsPage";
 
 function congratulations() {
   return (

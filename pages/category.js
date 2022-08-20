@@ -1,4 +1,4 @@
-import Categorypage from "../../Components/HomePage/Categorypage";
+import Categorypage from "../Components/HomePage/Categorypage";
 
 function category() {
   return (
