@@ -8,7 +8,7 @@ import styles from "./PointRewardPage.module.css";
 import Link from "next/link";
 import ArrowCircleRightRoundedIcon from "@mui/icons-material/ArrowCircleRightRounded";
 import HelpOutlineRoundedIcon from "@mui/icons-material/HelpOutlineRounded";
-import DescriptionRoundedIcon from '@mui/icons-material/DescriptionRounded';
+import DescriptionRoundedIcon from "@mui/icons-material/DescriptionRounded";
 const Faqs = () => {
   return (
     <div>
@@ -45,32 +45,36 @@ const Faqs = () => {
           </p>
         </div>
       </div>
-      <div className={`my-6 ${styles.faqsCard}`}>
-        <div className={`gap-3 ${styles.faqInfo}`}>
-          <Link href="faqPage">
-            <a>
+      <div className={`my-6  ${styles.faqsCard}`}>
+        <Link href="faqPage">
+          <a>
+            <div className={`gap-3 mr-5 ${styles.faqInfo}`}>
               <div className="flex items-start gap-3">
                 <div style={{ color: "#C8B6E2" }}>
                   <HelpOutlineRoundedIcon />
                 </div>
-               
+
                 <p className="text-sm">সচরাচর জিজ্ঞাসা</p>
               </div>
-            </a>
-          </Link>
 
-          <Image className="pr-5" src={righticon} alt="righticon" />
-        </div>
-        <div className={`gap-3 ${styles.faqInfo}`}>
-          <div className="flex items-start gap-3">
-          <div style={{ color: "#C8B6E2" }}>
+              <Image className="" src={righticon} alt="righticon" />
+            </div>
+          </a>
+        </Link>
+        <Link href="conditionPage">
+          <a>
+            <div className={`gap-3 mr-5 ${styles.faqInfo}`}>
+              <div className="flex items-start gap-3">
+                <div style={{ color: "#C8B6E2" }}>
                   <DescriptionRoundedIcon />
                 </div>
-            <p className="text-sm">শর্তাবলী</p>
-          </div>
+                <p className="text-sm">শর্তাবলী</p>
+              </div>
 
-          <Image className="pr-5" src={righticon} alt="righticon" />
-        </div>
+              <Image className="" src={righticon} alt="righticon" />
+            </div>
+          </a>
+        </Link>
       </div>
     </div>
   );

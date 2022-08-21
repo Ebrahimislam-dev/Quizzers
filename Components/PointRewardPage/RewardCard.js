@@ -29,7 +29,9 @@ const RewardCard = ({ toggleDrawer }) => {
             </p>
           </div>
           <div>
-            <button className={`text-white ${styles.collectionBtn}`}>সংগ্রহ করুন</button>
+            <button className={`text-white ${styles.collectionBtn}`}>
+              সংগ্রহ করুন
+            </button>
           </div>
         </div>
       </div>

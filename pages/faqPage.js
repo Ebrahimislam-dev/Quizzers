@@ -4,7 +4,7 @@ import AccordionSummary from "@mui/material/AccordionSummary";
 import AccordionDetails from "@mui/material/AccordionDetails";
 import Typography from "@mui/material/Typography";
 import ExpandMoreIcon from "@mui/icons-material/ExpandMore";
-import styles from "../styles/faqs.module.css";
+import styles from "../styles/common.module.css";
 import lefticon from "../Media/icons/lefticon.png";
 import Link from "next/link";
 import Image from "next/image";

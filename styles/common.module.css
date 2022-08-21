@@ -19,3 +19,12 @@
   -ms-overflow-style: none; /* IE and Edge */
   scrollbar-width: none; /* Firefox */
 }
+.conditionBtn{
+  padding: 4px 12px;
+
+border-radius: 2px;
+font-weight: 400;
+font-size: 11px;
+line-height: 14px;
+color: #FFFFFF;
+}

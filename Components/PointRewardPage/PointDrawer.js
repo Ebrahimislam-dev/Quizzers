@@ -21,8 +21,9 @@ const Root = styled("div")(({ theme }) => ({
   justifyContent: "center",
   alignItems: "center",
   // width: "300px",
- 
+
   height: "100%",
+
   backgroundColor:
     theme.palette.mode === "light"
       ? grey[100]
@@ -48,13 +49,12 @@ const PointDrawer = (props) => {
           ".MuiDrawer-root > .MuiPaper-root": {
             height: `calc(60% - ${drawerBleeding}px)`,
             overflow: "visible",
-            
           },
         }}
       />
 
       <SwipeableDrawer
-        className=" drawer"
+        className={styles.drawer}
         container={container}
         anchor="bottom"
         open={open}
@@ -65,6 +65,7 @@ const PointDrawer = (props) => {
         ModalProps={{
           keepMounted: true,
         }}
+        // sx={{ border: "20px solid #2e3e5c;", borderRadius: "20px 20px 0 0" }}
       >
         <StyledBox
           sx={{
@@ -81,9 +82,9 @@ const PointDrawer = (props) => {
           sx={{
             px: 2,
             pb: 2,
+
             height: "100%",
             overflow: "auto",
-         
           }}
         >
           <div className="flex flex-col items-center justify-center text-center gap-y-3 ">

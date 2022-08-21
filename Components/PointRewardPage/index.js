@@ -35,10 +35,15 @@ const PointRewardPage = () => {
         </div>
       </section>
       <section style={{ color: "#2C2C2C" }}>
-        <div className="flex items-center justify-between pb-4 pl-6 pr-8">
-          <p className="text-base font-medium ">পয়েন্ট রিওয়ার্ড</p>
-          <p className="text-sm font-normal ">সব দেখুন</p>
-        </div>
+        <Link href="stepRewardPage">
+          <a>
+            <div className="flex items-center justify-between pb-4 pl-6 pr-8">
+              <p className="text-base font-medium ">পয়েন্ট রিওয়ার্ড</p>
+              <p className="text-sm font-normal ">সব দেখুন</p>
+            </div>
+          </a>
+        </Link>
+
         <div>
           <RewardCard toggleDrawer={toggleDrawer} />
         </div>
@@ -46,10 +51,11 @@ const PointRewardPage = () => {
       <section className="mb-14 mt-7 ">
         <Faqs></Faqs>
       </section>
+      <div>
+        <PointDrawer open={open} toggleDrawer={toggleDrawer} />
+      </div>
 
-      <PointDrawer open={open} toggleDrawer={toggleDrawer} />
-
- {/*      <section className="">
+      {/*      <section className="">
         <div className="">
           <BottomHeader />
         </div>
