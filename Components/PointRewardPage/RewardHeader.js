@@ -5,6 +5,7 @@ import Image from "next/image";
 import styles from "./PointRewardPage.module.css";
 const RewardHeader = () => {
   return (
+  
     <div className={`${styles.rewardHeader}  w-full text-white`}>
       <div className=" flex justify-between items-center px-5 py-6  text-base font-medium">
         <h4>ইশতিয়াক আহমেদ</h4>

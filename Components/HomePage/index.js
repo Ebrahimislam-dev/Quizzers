@@ -23,7 +23,7 @@ const HomePage = () => {
       </section>
       <section>
         <div className="relative pb-10 px-7 ">
-          <div className="absolute flex items-center justify-between px-5 bg-white shadow-md w-80 sm:w-64 rounded-2xl -top-20 py-7 ">
+          <div className="absolute flex items-center justify-between px-5 bg-white shadow-md w-80 sm:w-64 rounded-2xl -top-20 py-5 ">
             <div>
               <h6
                 className="text-xs font-medium leading-5 "

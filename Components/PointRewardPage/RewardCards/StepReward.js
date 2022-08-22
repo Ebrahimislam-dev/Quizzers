@@ -11,6 +11,10 @@ import Link from "next/link";
 import PointDrawer from "../PointDrawer";
 import Image from "next/image";
 import WorriorRewardCards from "./WorriorRewardCards";
+import MasterRewardCard from "./MasterRewardCard";
+import GrandMasterRewardCard from "./GrandMasterRewardCard";
+import ChampionRewardCard from "./ChampionRewardCard";
+import LegendRewardCard from "./LegendRewardCard";
 function TabPanel(props) {
   const { children, value, index, ...other } = props;
 
@@ -91,27 +95,33 @@ export default function StepReward() {
         </Tabs>
         <TabPanel value={value} index={0}>
           <div>
-            <div className=" pt-5 pb-7">
-              <RewardHeader></RewardHeader>
-            </div>
-            <div className="pb-4 pl-3 pr-8">
-              <p className="text-base font-medium ">পয়েন্ট রিওয়ার্ড</p>
-            </div>
             <WorriorRewardCards toggleDrawer={toggleDrawer} />
             <PointDrawer open={open} toggleDrawer={toggleDrawer} />
           </div>
         </TabPanel>
         <TabPanel value={value} index={1}>
-          Item Two
+          <div>
+            <MasterRewardCard toggleDrawer={toggleDrawer} />
+            <PointDrawer open={open} toggleDrawer={toggleDrawer} />
+          </div>
         </TabPanel>
         <TabPanel value={value} index={2}>
-          Item Three
+          <div>
+            <GrandMasterRewardCard toggleDrawer={toggleDrawer} />
+            <PointDrawer open={open} toggleDrawer={toggleDrawer} />
+          </div>
         </TabPanel>
         <TabPanel value={value} index={3}>
-          Item Four
+          <div>
+            <ChampionRewardCard toggleDrawer={toggleDrawer} />
+            <PointDrawer open={open} toggleDrawer={toggleDrawer} />
+          </div>
         </TabPanel>
         <TabPanel value={value} index={4}>
-          Item Five
+          <div>
+            <LegendRewardCard toggleDrawer={toggleDrawer} />
+            <PointDrawer open={open} toggleDrawer={toggleDrawer} />
+          </div>
         </TabPanel>
       </Box>
     </div>

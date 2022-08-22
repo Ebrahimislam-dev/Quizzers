@@ -8,22 +8,23 @@ function CongratulationsPage() {
     <div className={`${style.packagepage} border-2 px-5 `}>
       <div className="pb-10 " style={{ height: "100%" }}>
         <div>
-          <Link href="category">
-            <a>
-              <div className="grid items-center grid-cols-3 pt-3 ">
-                <div></div>
-                <p
-                  className="text-2xl font-medium text-center "
-                  style={{ color: "#333333" }}
-                >
-                  অভিনন্দন
-                </p>
+          <div className="grid items-center grid-cols-3 pt-3 ">
+            <div></div>
+            <p
+              className="text-2xl font-medium text-center "
+              style={{ color: "#333333" }}
+            >
+              অভিনন্দন
+            </p>
+            <Link href="profile">
+              <a>
+                {" "}
                 <div className="pl-20 text-gray-900 hover:text-red-500 hover:font-bold">
                   <CloseIcon />
-                </div>
-              </div>
-            </a>
-          </Link>
+                </div>{" "}
+              </a>
+            </Link>
+          </div>
         </div>
         <div className={`${style.congratsBg} px-5 py-6 mt-6`}>
           <Image className="pt-8 " src={congoreward} alt="Reward Tropy" />

@@ -28,42 +28,78 @@ function Categorypage() {
             </a>
           </Link>
         </div>
-        <div className="grid grid-cols-2 gap-5 px-4 gap-x-3 pt-9 ">
-          <div
-            className={`${style.categoryItem} active:border-slate-300  border-2 shadow-sm `}
-          >
-            <Image src={sporticon} alt="sporticon" />
-            <p>খেলাধুলা</p>
-          </div>
-          <div className={`${style.categoryItem} active:border-slate-300  border-2 shadow-sm `}>
-            <Image src={infoicon} alt="infoicon" />
-            <p>তথ্যমূলক</p>
-          </div>
-          <div className={`gap-y-2 ${`${style.categoryItem} active:border-slate-300  border-2 shadow-sm `}`}>
-            <Image src={googlilicon} alt="googlilicon" />
-            <p>গুগলি</p>
-          </div>
-          <div className={`${style.categoryItem} active:border-slate-300  border-2 shadow-sm `}>
-            <Image src={globalicon} alt="globalicon" />
-            <p>আন্তর্জাতিক</p>
-          </div>
-          <div className={`${style.categoryItem} active:border-slate-300  border-2 shadow-sm `}>
-            <Image src={bangladesicon} alt="bangladesicon" />
-            <p> বাংলাদেশ</p>
-          </div>
-          <div className={`gap-y-2 ${`${style.categoryItem} active:border-slate-300  border-2 shadow-sm `}`}>
-            <Image src={entertainmenticon} alt="entertainmenticon" />
-            <p>এন্টারটেইন</p>
-          </div>
+        <div className="grid grid-cols-2 gap-5 px-4  pt-9 mb-32 ">
+          <Link href="sportQuiz">
+            <a>
+              <div
+                className={`${style.categoryItem} active:border-slate-300  border-2 shadow-sm `}
+              >
+                <Image src={sporticon} alt="sporticon" />
+                <p>খেলাধুলা</p>
+              </div>
+            </a>
+          </Link>
+          <Link href="sportQuiz">
+            <a>
+              <div
+                className={`${style.categoryItem} active:border-slate-300  border-2 shadow-sm `}
+              >
+                <Image src={infoicon} alt="infoicon" />
+                <p>তথ্যমূলক</p>
+              </div>
+            </a>
+          </Link>
+
+          <Link href="sportQuiz">
+            <a>
+              <div
+                className={`gap-y-2 ${`${style.categoryItem} active:border-slate-300  border-2 shadow-sm `}`}
+              >
+                <Image src={googlilicon} alt="googlilicon" />
+                <p>গুগলি</p>
+              </div>
+            </a>
+          </Link>
+          <Link href="bdquiz">
+            <a>
+              <div
+                className={`${style.categoryItem} active:border-slate-300  border-2 shadow-sm `}
+              >
+                <Image src={globalicon} alt="globalicon" />
+                <p>আন্তর্জাতিক</p>
+              </div>
+            </a>
+          </Link>
+
+          <Link href="bdquiz">
+            <a>
+              <div
+                className={`${style.categoryItem} active:border-slate-300  border-2 shadow-sm `}
+              >
+                <Image src={bangladesicon} alt="bangladesicon" />
+                <p> বাংলাদেশ</p>
+              </div>
+            </a>
+          </Link>
+          <Link href="bdquiz">
+            <a>
+              <div
+                className={`gap-y-2 ${`${style.categoryItem} active:border-slate-300  border-2 shadow-sm `}`}
+              >
+                <Image src={entertainmenticon} alt="entertainmenticon" />
+                <p>এন্টারটেইন</p>
+              </div>
+            </a>
+          </Link>
         </div>
 
-        <Link href="quiz">
+        {/* <Link href="bdquiz">
           <a>
             <div className={`${style.commonButton} mb-10`}>
               <button className="">খেলা শুরু করুন</button>
             </div>
           </a>
-        </Link>
+        </Link> */}
       </div>
     </div>
   );

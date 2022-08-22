@@ -46,19 +46,19 @@ const Profile = () => {
                 alt="awardpointicon"
               />
               <h3>১৫০০</h3>
-              <p>পয়েন্ট</p>
+              <p style={{ fontSize: "10px" }}>পয়েন্ট</p>
             </div>
             <div className={styles.profiledash}></div>
             <div className=" flex items-center justify-center flex-col px-6 py-4 gap-2">
               <Image className="w-full h-auto " src={tropy} alt="tropy" />
               <h3>১০</h3>
-              <p>রেংকিং</p>
+              <p style={{ fontSize: "10px" }}>রেংকিং</p>
             </div>
             <div className={styles.profiledash}></div>
             <div className=" flex items-center justify-center flex-col px-3 py-4 gap-2">
               <Image className="w-full h-auto " src={faceicon} alt="faceicon" />
               <h3>৫</h3>
-              <p>রেডিম ম্যাক্সিম</p>
+              <p style={{ fontSize: "10px" }}>রেডিম ম্যাক্সিম</p>
             </div>
           </div>
         </div>
@@ -84,7 +84,10 @@ const Profile = () => {
             </div>
           </div>
         </div>
-        <div className=" flex flex-col gap-y-6 mb-24" style={{ color: "#2E3E5C" }}>
+        <div
+          className=" flex flex-col gap-y-6 mb-24"
+          style={{ color: "#2E3E5C" }}
+        >
           <div className=" flex items-center justify-between mx-8">
             <div className=" flex items-center justyfy-center gap-6 ">
               <div

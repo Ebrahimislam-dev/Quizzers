@@ -4,23 +4,22 @@ import styles from "../PointRewardPage.module.css";
 import rewardicon from "../../../Media/icons/RewardIcon2nd.png";
 import lockicon from "../../../Media/icons/lockIcon.png";
 import Image from "next/image";
-import RewardHeader from "../RewardHeader";
+
 import prizeicon from "../../../Media/icons/prize_hires 1.png";
-const WorriorRewardCards = ({ toggleDrawer }) => {
+const LegendRewardCard = ({ toggleDrawer }) => {
   return (
-    // {!categoryRef.current ? "Add New Surah" : "Update Surah"}
     <div className=" mb-10">
       <div className=" pt-5 pb-7">
-        <div className={`${styles.rewardHeader}  w-full text-white`}>
+        <div className={`${styles.legendRewardHeader}  w-full text-white`}>
           <div className=" flex justify-between items-center px-5 py-6  text-base font-medium">
             <h4>ইশতিয়াক আহমেদ</h4>
             <div className="flex justify-between items-center gap-1">
               <Image src={prizeicon} alt="" />
-              <p>১২০০ পয়েন্ট</p>
+              <p>৫০০০ পয়েন্ট</p>
             </div>
           </div>
           <div className=" text-center">
-            <p className=" font-bold text-lg ">Warrior</p>
+            <p className=" font-bold text-lg ">Legend</p>
           </div>
           <div className=" bg-white py-1 mx-8 rounded-3xl my-3 "></div>
           <div>
@@ -39,7 +38,7 @@ const WorriorRewardCards = ({ toggleDrawer }) => {
             <Image src={rewardicon} alt="rewardicon" />
           </div>
           <div>
-            <p className="text-sm font-medium mb-2">মোবাইল রিচার্জ ২০ টাকা </p>
+            <p className="text-sm font-medium mb-2">গিফট কার্ড </p>
             <p
               style={{
                 color: " #666666",
@@ -48,7 +47,7 @@ const WorriorRewardCards = ({ toggleDrawer }) => {
                 lineHeight: "20px",
               }}
             >
-              ১০০০ পয়েন্ট
+              ৫০০০ পয়েন্ট
             </p>
           </div>
           <div>
@@ -64,7 +63,7 @@ const WorriorRewardCards = ({ toggleDrawer }) => {
             <Image src={lockicon} alt="lockicon" />
           </div>
           <div>
-            <p className="text-sm font-medium mb-2 ">মোবাইল রিচার্জ ৫০ টাকা </p>
+            <p className="text-sm font-medium mb-2 ">শপিং কার্ড </p>
             <p
               style={{
                 color: " #666666",
@@ -73,7 +72,7 @@ const WorriorRewardCards = ({ toggleDrawer }) => {
                 lineHeight: "20px",
               }}
             >
-              ১৫০০ পয়েন্ট
+              ৫০০০ পয়েন্ট
             </p>
           </div>
           <div>
@@ -94,4 +93,4 @@ const WorriorRewardCards = ({ toggleDrawer }) => {
   );
 };
 
-export default WorriorRewardCards;
+export default LegendRewardCard;

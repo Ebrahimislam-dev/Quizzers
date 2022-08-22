@@ -6,7 +6,7 @@ import Checkbox from "@mui/material/Checkbox";
 function Packageindex() {
   return (
     <div className={`${style.packagepage} border-2 px-8 `}>
-      <div className="pb-10 " style={{ height: "100%" }}>
+      <div className="pb-10  " style={{ height: "100%" }}>
         <div>
           <Link href="/">
             <a>
@@ -46,7 +46,7 @@ function Packageindex() {
           </div>
         </div>
         <div
-          className="flex items-center justify-between p-4 bg-white shadow-sm mt-7"
+          className="flex items-center justify-between p-4 bg-white shadow-sm mt-7 mb-60"
           style={{ border: "1.2px solid #D3D3D3", borderRadius: "14px" }}
         >
           <Checkbox className="rounded-full " color="success" />

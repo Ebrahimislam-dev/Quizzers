@@ -7,7 +7,7 @@ import DragHandleIcon from "@material-ui/icons/DragHandle";
 import EmojiEventsOutlinedIcon from "@material-ui/icons/EmojiEventsOutlined";
 import ExtensionOutlinedIcon from "@material-ui/icons/ExtensionOutlined";
 import Paper from "@mui/material/Paper";
-import { useRouter } from 'next/router'
+import { useRouter } from "next/router";
 const useStyles = makeStyles({
   root: {
     width: "100%",
@@ -42,19 +42,15 @@ export default function BottomHeader() {
         // className={classes.root}
       >
         {" "}
-        <BottomNavigationAction
-          label="Home"
-          value="/"
-          icon={<HomeIcon />}
-        />
+        <BottomNavigationAction label="Home" value="/" icon={<HomeIcon />} />
         <BottomNavigationAction
           label="Reward"
           value="/pointReward"
           icon={<EmojiEventsOutlinedIcon />}
         />
         <BottomNavigationAction
-          label="Settings"
-          value="Settings"
+          label="Category"
+          value="category"
           icon={<ExtensionOutlinedIcon />}
         />
         <BottomNavigationAction
