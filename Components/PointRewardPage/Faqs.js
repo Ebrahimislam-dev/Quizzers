@@ -13,7 +13,7 @@ const Faqs = () => {
   return (
     <div>
       <div className={styles.faqsCard}>
-        <div className={`gap-3 ${styles.faqInfo}`}>
+        <div className={` gap-3 ${styles.faqInfo}`}>
           <div style={{ color: "#C8B6E2" }}>
             <ArrowCircleRightRoundedIcon />
           </div>

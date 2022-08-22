@@ -3,6 +3,7 @@ import Link from "next/link";
 import congoreward from "../../../Media/images/congoreward.png";
 import style from "../HomePage.module.css";
 import CloseIcon from "@mui/icons-material/Close";
+import ConratstropyAnimation from "./ConratstropyAnimation";
 function CongratulationsPage() {
   return (
     <div className={`${style.packagepage} border-2 px-5 `}>
@@ -26,9 +27,10 @@ function CongratulationsPage() {
             </Link>
           </div>
         </div>
-        <div className={`${style.congratsBg} px-5 py-6 mt-6`}>
-          <Image className="pt-8 " src={congoreward} alt="Reward Tropy" />
-          <p className="text-base text-white font-mediumS">
+        <div className={`${style.congratsBg} px-5 py-3 mt-6`}>
+          {/* <Image className="pt-8 " src={congoreward} alt="Reward Tropy" /> */}
+          <ConratstropyAnimation />
+          <p className="text-base mt-3 text-white font-mediumS">
             আপনি পয়েন্ট পেয়েছেন
           </p>
 

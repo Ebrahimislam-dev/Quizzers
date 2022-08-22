@@ -14,6 +14,7 @@ import RewardSlider from "./RewardSlider";
 import Image from "next/image";
 import BottomHeader from "../BottomHeader/BottomHeader";
 import Link from "next/link";
+import TropyAnimation from "./TropyAnimation";
 
 const HomePage = () => {
   return (
@@ -36,11 +37,12 @@ const HomePage = () => {
               </h5>
             </div>
             <div>
-              <Image
+              {/* <Image
                 className="w-14 h-14 "
                 src={rewardTropy}
                 alt="Reward Tropy"
-              />
+              /> */}
+              <TropyAnimation />
             </div>
           </div>
         </div>

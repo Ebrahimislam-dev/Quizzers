@@ -10,6 +10,8 @@ import unsubscribe from "../../Media/icons/unsubscribe.png";
 import info from "../../Media/icons/info.png";
 import SettingsOutlinedIcon from "@mui/icons-material/SettingsOutlined";
 import ArrowForwardIosIcon from "@mui/icons-material/ArrowForwardIos";
+import InfoOutlinedIcon from "@mui/icons-material/InfoOutlined";
+import LogoutOutlinedIcon from "@mui/icons-material/LogoutOutlined";
 const Profile = () => {
   return (
     <div className={`${styles.profilepage}  `}>
@@ -113,7 +115,7 @@ const Profile = () => {
                   padding: "8px",
                 }}
               >
-                <Image className="w-full h-auto  " src={info} alt="info" />
+                <InfoOutlinedIcon />
               </div>
 
               <p className=" font-medium text-lg">নির্দেশনা অংশগ্রহন </p>
@@ -129,11 +131,7 @@ const Profile = () => {
                   padding: "8px",
                 }}
               >
-                <Image
-                  className="w-full h-auto  "
-                  src={unsubscribe}
-                  alt="unsubscribe"
-                />
+                <LogoutOutlinedIcon />
               </div>
 
               <p className=" font-medium text-lg">Unsubscribe </p>
