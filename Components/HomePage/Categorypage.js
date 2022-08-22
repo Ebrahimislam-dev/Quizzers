@@ -11,7 +11,7 @@ import bangladesicon from "../../Media/icons/bangladeshflag.png";
 import entertainmenticon from "../../Media/icons/entertainment.png";
 function Categorypage() {
   return (
-    <div className={`${style.packagepage} border-2 px-5 `}>
+    <div className={`${style.packagepage} px-5 `}>
       <div className="pb-10 " style={{ height: "100%" }}>
         <div>
           <Link href="/">

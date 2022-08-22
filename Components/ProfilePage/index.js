@@ -12,7 +12,7 @@ import SettingsOutlinedIcon from "@mui/icons-material/SettingsOutlined";
 import ArrowForwardIosIcon from "@mui/icons-material/ArrowForwardIos";
 const Profile = () => {
   return (
-    <div className={`${styles.profilepage}  border-2`}>
+    <div className={`${styles.profilepage}  `}>
       <div className={styles.profileheader}>
         <Link href="/">
           <a>
