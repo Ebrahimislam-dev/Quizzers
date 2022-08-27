@@ -3,7 +3,7 @@ import Image from "next/image";
 import Link from "next/link";
 import WestIcon from "@mui/icons-material/West";
 import personimg from "../../Media/images/personimg.jpg";
-import awardpointicon from "../../Media/icons/awardpoint.png";
+import awardpointicon from "../../Media/images/awardpointicon.svg";
 import tropy from "../../Media/icons/trophy.png";
 import faceicon from "../../Media/icons/faceIcon.png";
 import unsubscribe from "../../Media/icons/unsubscribe.png";
@@ -12,6 +12,9 @@ import SettingsOutlinedIcon from "@mui/icons-material/SettingsOutlined";
 import ArrowForwardIosIcon from "@mui/icons-material/ArrowForwardIos";
 import InfoOutlinedIcon from "@mui/icons-material/InfoOutlined";
 import LogoutOutlinedIcon from "@mui/icons-material/LogoutOutlined";
+import EmojiEventsOutlinedIcon from "@material-ui/icons/EmojiEventsOutlined";
+import SentimentVerySatisfiedIcon from "@mui/icons-material/SentimentVerySatisfied";
+import MilitaryTechIcon from "@mui/icons-material/MilitaryTech";
 const Profile = () => {
   return (
     <div className={`${styles.profilepage}  `}>
@@ -47,20 +50,22 @@ const Profile = () => {
                 src={awardpointicon}
                 alt="awardpointicon"
               />
+              {/* <MilitaryTechIcon /> */}
+              {/* <awardpointicon /> */}
               <h3>১৫০০</h3>
-              <p style={{ fontSize: "10px" }}>পয়েন্ট</p>
+              <p className=" text-xs 2xl:text-sm">পয়েন্ট</p>
             </div>
             <div className={styles.profiledash}></div>
             <div className=" flex items-center justify-center flex-col px-6 py-4 gap-2">
-              <Image className="w-full h-auto " src={tropy} alt="tropy" />
+              <EmojiEventsOutlinedIcon />
               <h3>১০</h3>
-              <p style={{ fontSize: "10px" }}>রেংকিং</p>
+              <p className=" text-xs 2xl:text-sm">রেংকিং</p>
             </div>
             <div className={styles.profiledash}></div>
             <div className=" flex items-center justify-center flex-col px-3 py-4 gap-2">
-              <Image className="w-full h-auto " src={faceicon} alt="faceicon" />
+              <SentimentVerySatisfiedIcon />
               <h3>৫</h3>
-              <p style={{ fontSize: "10px" }}>রেডিম ম্যাক্সিম</p>
+              <p className=" text-xs 2xl:text-sm">রেডিম ম্যাক্সিম</p>
             </div>
           </div>
         </div>

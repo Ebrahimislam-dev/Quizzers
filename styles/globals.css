@@ -3,15 +3,16 @@
 @tailwind utilities;
 
 .main {
-  font-family:  'Tatsam Bengali Rnd';
-    display: flex;
-    justify-content: center;
-    align-items: center;
-   
-  }
-  @font-face {
-    font-family: 'Tatsam Bengali Rnd';
-    src: url('../Media/TatsamBengaliRnd_Medium.otf');
+  font-family: 'Tatsam Bengali Rnd';
 
- 
-    }
+  background: #F9FCFF;
+
+
+}
+
+@font-face {
+  font-family: 'Tatsam Bengali Rnd';
+  src: url('../Media/TatsamBengaliRnd_Medium.otf');
+
+
+}

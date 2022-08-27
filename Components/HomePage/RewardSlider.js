@@ -30,24 +30,23 @@ const RewardSlider = () => {
     <div className="">
       <Slider {...settings}>
         <div className={`${style.sliderContent} `}>
-          <Image
-            className=" w-44 h-36 "
-            src={caruselimage}
-            alt="caruselimage"
-          />
+          <div className=" w-48  ">
+            <Image src={caruselimage} alt="caruselimage" />
+          </div>
+
           <div className=" text-right ">
             <h1
-              className=" font-semibold text-xl "
+              className=" font-semibold text-2xl 2xl:text-3xl "
               style={{ color: "#4C67AD" }}
             >
               কুইজার্স রিওয়ার্ড
             </h1>
-            <p className=" font-medium text-xs ">
+            <p className=" font-medium text-xs 2xl:text-sm ">
               অর্জন করে লুফে নাও দারুন সব <br />
               আকর্ষণীয় অফার
             </p>
             <button
-              className=" text-xs font-medium text-white px-5 py-1 mt-1"
+              className=" text-xs 2xl:text-sm  font-medium text-white px-5 py-1 mt-1"
               style={{ background: "#6A5AE0", borderRadius: " 20px" }}
             >
               ক্লিক কর
@@ -55,24 +54,23 @@ const RewardSlider = () => {
           </div>
         </div>
         <div className={`${style.sliderContent} `}>
-          <Image
-            className=" w-44 h-36 "
-            src={caruselimage}
-            alt="caruselimage"
-          />
+          <div className=" w-48  ">
+            <Image src={caruselimage} alt="caruselimage" />
+          </div>
+
           <div className=" text-right ">
             <h1
-              className=" font-semibold text-xl "
+              className=" font-semibold text-2xl 2xl:text-3xl "
               style={{ color: "#4C67AD" }}
             >
               কুইজার্স রিওয়ার্ড
             </h1>
-            <p className=" font-medium text-xs ">
+            <p className=" font-medium text-xs 2xl:text-sm ">
               অর্জন করে লুফে নাও দারুন সব <br />
               আকর্ষণীয় অফার
             </p>
             <button
-              className=" text-xs font-medium text-white px-5 py-1 mt-1"
+              className=" text-xs 2xl:text-sm  font-medium text-white px-5 py-1 mt-1"
               style={{ background: "#6A5AE0", borderRadius: " 20px" }}
             >
               ক্লিক কর
@@ -80,24 +78,23 @@ const RewardSlider = () => {
           </div>
         </div>
         <div className={`${style.sliderContent} `}>
-          <Image
-            className=" w-44 h-36 "
-            src={caruselimage}
-            alt="caruselimage"
-          />
+          <div className=" w-48  ">
+            <Image src={caruselimage} alt="caruselimage" />
+          </div>
+
           <div className=" text-right ">
             <h1
-              className=" font-semibold text-xl "
+              className=" font-semibold text-2xl 2xl:text-3xl "
               style={{ color: "#4C67AD" }}
             >
               কুইজার্স রিওয়ার্ড
             </h1>
-            <p className=" font-medium text-xs ">
+            <p className=" font-medium text-xs 2xl:text-sm ">
               অর্জন করে লুফে নাও দারুন সব <br />
               আকর্ষণীয় অফার
             </p>
             <button
-              className=" text-xs font-medium text-white px-5 py-1 mt-1"
+              className=" text-xs 2xl:text-sm  font-medium text-white px-5 py-1 mt-1"
               style={{ background: "#6A5AE0", borderRadius: " 20px" }}
             >
               ক্লিক কর

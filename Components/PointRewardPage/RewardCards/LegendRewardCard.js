@@ -6,6 +6,7 @@ import lockicon from "../../../Media/icons/lockIcon.png";
 import Image from "next/image";
 
 import prizeicon from "../../../Media/icons/prize_hires 1.png";
+import BorderLinearProgress from "../../HomePage/Quiz/BorderLinearProgress";
 const LegendRewardCard = ({ toggleDrawer }) => {
   return (
     <div className=" mb-10">
@@ -21,9 +22,11 @@ const LegendRewardCard = ({ toggleDrawer }) => {
           <div className=" text-center">
             <p className=" font-bold text-lg ">Legend</p>
           </div>
-          <div className=" bg-white py-1 mx-8 rounded-3xl my-3 "></div>
+          <div className="  mx-8  my-3 ">
+            <BorderLinearProgress value={4800} height={12} />
+          </div>
           <div>
-            <p className=" text-xs font-normal text-center px-11 pb-6">
+            <p className=" text-xs 2xl:text-sm  font-normal text-center px-11 pb-6">
               পয়েন্ট ব্যবহার করলে লেভেলের অগ্রগতির উপর কোন প্রভাব পড়বে না
             </p>
           </div>
@@ -33,18 +36,19 @@ const LegendRewardCard = ({ toggleDrawer }) => {
         <p className="text-base font-medium ">পয়েন্ট রিওয়ার্ড</p>
       </div>
       <div className={` ${styles.rewardCard}`}>
-        <div className="flex items-center justify-between py-3 ">
+        <div className="flex items-center justify-between py-3 2xl:px-5">
           <div>
             <Image src={rewardicon} alt="rewardicon" />
           </div>
           <div>
-            <p className="text-sm font-medium mb-2">গিফট কার্ড </p>
+            <p className="text-sm 2xl:text-base  font-medium mb-2">
+              গিফট কার্ড{" "}
+            </p>
             <p
+              className=" text-xs 2xl:text-sm"
               style={{
                 color: " #666666",
                 opacity: "0.55",
-                fontSize: " 12px",
-                lineHeight: "20px",
               }}
             >
               ৫০০০ পয়েন্ট
@@ -58,18 +62,19 @@ const LegendRewardCard = ({ toggleDrawer }) => {
         </div>
       </div>
       <div className={` mt-7 ${styles.rewardCard}`}>
-        <div className="flex items-center justify-between py-3 ">
+        <div className="flex items-center justify-between py-3 2xl:px-5">
           <div>
             <Image src={lockicon} alt="lockicon" />
           </div>
           <div>
-            <p className="text-sm font-medium mb-2 ">শপিং কার্ড </p>
+            <p className="text-sm 2xl:text-base  font-medium mb-2 ">
+              শপিং কার্ড{" "}
+            </p>
             <p
+              className=" text-xs 2xl:text-sm"
               style={{
                 color: " #666666",
                 opacity: "0.55",
-                fontSize: " 12px",
-                lineHeight: "20px",
               }}
             >
               ৫০০০ পয়েন্ট

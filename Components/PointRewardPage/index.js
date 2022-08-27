@@ -11,6 +11,7 @@ import Faqs from "./Faqs";
 import PointDrawer from "./PointDrawer";
 import Image from "next/image";
 import BottomHeader from "../BottomHeader/BottomHeader";
+import WestIcon from "@mui/icons-material/West";
 const PointRewardPage = () => {
   const [open, setOpen] = useState(false);
 
@@ -23,7 +24,7 @@ const PointRewardPage = () => {
         <Link href="/">
           <a>
             <div className="flex items-center gap-4 px-5 pt-3 ">
-              <Image src={lefticon} alt="" />
+              <WestIcon />
               <p className="text-2xl font-medium " style={{ color: "#333333" }}>
                 পয়েন্ট রিওয়ার্ড
               </p>

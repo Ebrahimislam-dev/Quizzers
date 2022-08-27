@@ -9,6 +9,7 @@ import Link from "next/link";
 import ArrowCircleRightRoundedIcon from "@mui/icons-material/ArrowCircleRightRounded";
 import HelpOutlineRoundedIcon from "@mui/icons-material/HelpOutlineRounded";
 import DescriptionRoundedIcon from "@mui/icons-material/DescriptionRounded";
+import ArrowForwardIosIcon from "@mui/icons-material/ArrowForwardIos";
 const Faqs = () => {
   return (
     <div>
@@ -48,30 +49,34 @@ const Faqs = () => {
       <div className={`my-6  ${styles.faqsCard}`}>
         <Link href="faqPage">
           <a>
-            <div className={`gap-3 mr-5 ${styles.faqInfo}`}>
-              <div className="flex items-start gap-3">
+            <div
+              className={`gap-3 mr-5 flex justify-between items-center ${styles.faqInfo}`}
+            >
+              <div className="flex justify-between items-center gap-3">
                 <div style={{ color: "#C8B6E2" }}>
                   <HelpOutlineRoundedIcon />
                 </div>
 
-                <p className="text-sm">সচরাচর জিজ্ঞাসা</p>
+                <p className="text-sm 2xl:text-base">সচরাচর জিজ্ঞাসা</p>
               </div>
 
-              <Image className="" src={righticon} alt="righticon" />
+              <ArrowForwardIosIcon />
             </div>
           </a>
         </Link>
         <Link href="conditionPage">
           <a>
-            <div className={`gap-3 mr-5 ${styles.faqInfo}`}>
-              <div className="flex items-start gap-3">
+            <div
+              className={`gap-3 mr-5 flex justify-between items-center ${styles.faqInfo}`}
+            >
+              <div className="flex justify-between items-center gap-3">
                 <div style={{ color: "#C8B6E2" }}>
                   <DescriptionRoundedIcon />
                 </div>
-                <p className="text-sm">শর্তাবলী</p>
+                <p className="text-sm 2xl:text-base">শর্তাবলী</p>
               </div>
 
-              <Image className="" src={righticon} alt="righticon" />
+              <ArrowForwardIosIcon />
             </div>
           </a>
         </Link>

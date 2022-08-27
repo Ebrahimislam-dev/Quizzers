@@ -11,18 +11,19 @@ const RewardCard = ({ toggleDrawer }) => {
   return (
     <div>
       <div className={`mx-5 ${styles.rewardCard}`}>
-        <div className="flex items-center justify-between py-4 ">
+        <div className="flex items-center justify-between py-4 2xl:px-5 ">
           <div>
             <Image src={rewardicon} alt="rewardicon" />
           </div>
           <div>
-            <p className="text-sm font-medium ">মোবাইল রিচার্জ ২০ টাকা </p>
+            <p className="text-sm 2xl:text-base font-medium ">
+              মোবাইল রিচার্জ ২০ টাকা{" "}
+            </p>
             <p
+              className=" text-xs 2xl:text-sm 2xl:mt-2"
               style={{
                 color: " #666666",
                 opacity: "0.55",
-                fontSize: " 12px",
-                lineHeight: "20px",
               }}
             >
               ১০০০ পয়েন্ট
@@ -36,18 +37,19 @@ const RewardCard = ({ toggleDrawer }) => {
         </div>
       </div>
       <div className={`mx-5 ${styles.rewardCard}`}>
-        <div className="flex items-center justify-between py-4 ">
+        <div className="flex items-center justify-between py-4 2xl:px-5">
           <div>
             <Image src={lockicon} alt="lockicon" />
           </div>
           <div>
-            <p className="text-sm font-medium ">মোবাইল রিচার্জ ৫০ টাকা </p>
+            <p className="text-sm 2xl:text-base font-medium ">
+              মোবাইল রিচার্জ ৫০ টাকা{" "}
+            </p>
             <p
+              className=" text-xs 2xl:text-sm 2xl:mt-2"
               style={{
                 color: " #666666",
                 opacity: "0.55",
-                fontSize: " 12px",
-                lineHeight: "20px",
               }}
             >
               ১৫০০ পয়েন্ট
@@ -68,18 +70,19 @@ const RewardCard = ({ toggleDrawer }) => {
         </div>
       </div>
       <div className={`mx-5 ${styles.rewardCard}`}>
-        <div className="flex items-center justify-between py-4 ">
+        <div className="flex items-center justify-between py-4 2xl:px-5">
           <div>
             <Image src={mediaicon} alt="mediaicon" />
           </div>
           <div>
-            <p className="text-sm font-medium ">যেভাবে কাজ করে </p>
+            <p className="text-sm 2xl:text-base font-medium ">
+              যেভাবে কাজ করে{" "}
+            </p>
             <p
+              className=" text-xs 2xl:text-sm 2xl:mt-2"
               style={{
                 color: " #666666",
                 opacity: "0.55",
-                fontSize: " 12px",
-                lineHeight: "20px",
               }}
             >
               বিস্তারিত দেখতে ক্লিক করুন

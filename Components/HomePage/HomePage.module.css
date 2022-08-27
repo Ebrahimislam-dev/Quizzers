@@ -1,10 +1,15 @@
 .homepage {
-  max-width: 375px;
-  /* height: 625px; */
+  max-width: 500px;
+  width: 100%;
+  margin: 0 auto;
   height: 100%;
-  background-color: #FFFFFF;
-  overflow-y: scroll;
+  /* min-width: 330px; */
+  /* overflow-y: scroll; */
+  /* background-color: #f9fcff; */
+  background-color: #ffffff;
+  /* position: relative; */
 }
+
 /* Hide scrollbar for Chrome, Safari and Opera */
 .homepage::-webkit-scrollbar {
   display: none;
@@ -12,17 +17,29 @@
 
 /* Hide scrollbar for IE, Edge and Firefox */
 .homepage {
-  -ms-overflow-style: none; /* IE and Edge */
-  scrollbar-width: none; /* Firefox */
+  -ms-overflow-style: none;
+  /* IE and Edge */
+  scrollbar-width: none;
+  /* Firefox */
 }
+
 .header {
   background-image: url("../../Media/images/homepageBG.png");
   background-repeat: no-repeat;
   background-position: center;
-  background-size: cover;
+  background-size: 100% 100%;
+  max-width: 500px;
   width: 100%;
+
+  position: relative;
   height: 200px;
 }
+
+.rewarPointcard {
+
+  width: 90%;
+}
+
 .rewardBtn {
   background: #c7d3f3;
   border: 4px solid #e9efff;
@@ -30,13 +47,13 @@
   font-size: 15px;
   line-height: 19px;
 }
+
 .category {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  width: 89px;
-  height: 85px;
+  padding: 15px;
   background: #f2f7ff;
   border-radius: 10px;
   font-weight: 500;
@@ -45,26 +62,38 @@
   color: #636469;
   cursor: pointer;
 }
+
+/* 
+.category Image {
+  width: 152px;
+  height: 52px;
+} */
+
 .bottombar {
   /* top: 570px; */
-  position: -webkit-sticky; /* Safari */
+  position: -webkit-sticky;
+  /* Safari */
   position: sticky;
   bottom: 0px;
 }
-.sliderContent{
+
+.sliderContent {
   display: flex !important;
-  justify-content: center;
+  justify-content: space-around;
   align-items: center;
 }
-.packagepage{  
+
+.packagepage {
+  max-width: 500px;
   width: 100%;
-  max-width: 375px;
-  min-width: 375px;
-  /* height: 625px; */
-   height: 100%; 
-  overflow-y: scroll;
+  margin: 0 auto;
+  height: 100%;
+  /* overflow-y: scroll; */
+  background-color: #FFFFFF;
+
 
 }
+
 /* Hide scrollbar for Chrome, Safari and Opera */
 .packagepage::-webkit-scrollbar {
   display: none;
@@ -73,11 +102,14 @@
 
 /* Hide scrollbar for IE, Edge and Firefox */
 .packagepage {
-  -ms-overflow-style: none; /* IE and Edge */
-  scrollbar-width: none; /* Firefox */
+  -ms-overflow-style: none;
+  /* IE and Edge */
+  scrollbar-width: none;
+  /* Firefox */
 }
-.commonButton{
-  padding: 16px 0px ;
+
+.commonButton {
+  padding: 16px 0px;
   margin-top: 30px;
   text-align: center;
   background: #4C67AD;
@@ -86,8 +118,9 @@
   font-weight: 500;
   font-size: 18px;
   line-height: 150%;
-  
+
 }
+
 .categoryItem {
   display: flex;
   flex-direction: column;
@@ -103,25 +136,30 @@
   color: #636469;
   cursor: pointer;
 }
-.congratsBg{
- min-width: 325px;
+
+.congratsBg {
+  min-width: 325px;
   background: #4C67AD;
   border-radius: 20px;
   display: flex;
   flex-direction: column;
   justify-content: center;
-   align-items: center;
+  align-items: center;
 }
+
 @media only screen and (min-device-width: 375px) and (max-device-width: 480px) {
-  .homepage {
-    max-width: 375px;
-    height: 100%;
-    overflow-y: scroll;
-  }
+  /* .homepage {
+ 
+    width: fit-content;
+    left: 20%;
+    transform: translateX(-10%);
+  } */
+
   .bottombar {
     /* top: 600px; */
     /* position: absolute; */
-    position: -webkit-sticky; /* Safari */
+    position: -webkit-sticky;
+    /* Safari */
     position: sticky;
     bottom: 0px;
   }

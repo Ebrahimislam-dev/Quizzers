@@ -8,7 +8,7 @@ import styles from "../styles/common.module.css";
 import lefticon from "../Media/icons/lefticon.png";
 import Link from "next/link";
 import Image from "next/image";
-
+import WestIcon from "@mui/icons-material/West";
 export default function faqPage() {
   return (
     <div className={styles.faqspage}>
@@ -16,7 +16,7 @@ export default function faqPage() {
         <Link href="/pointReward">
           <a>
             <div className="flex items-center gap-4 px-5 pt-3 ">
-              <Image src={lefticon} alt="" />
+              <WestIcon />
               <p className="text-2xl font-medium " style={{ color: "#333333" }}>
                 সচরাচর জিজ্ঞাসা
               </p>

@@ -6,7 +6,7 @@ import CloseIcon from "@mui/icons-material/Close";
 import ConratstropyAnimation from "./ConratstropyAnimation";
 function CongratulationsPage() {
   return (
-    <div className={`${style.packagepage} border-2 px-5 `}>
+    <div className={`${style.packagepage}  px-5 `}>
       <div className="pb-10 " style={{ height: "100%" }}>
         <div>
           <div className="grid items-center grid-cols-3 pt-3 ">

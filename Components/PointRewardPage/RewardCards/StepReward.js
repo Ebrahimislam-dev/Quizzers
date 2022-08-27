@@ -15,6 +15,7 @@ import MasterRewardCard from "./MasterRewardCard";
 import GrandMasterRewardCard from "./GrandMasterRewardCard";
 import ChampionRewardCard from "./ChampionRewardCard";
 import LegendRewardCard from "./LegendRewardCard";
+import WestIcon from "@mui/icons-material/West";
 function TabPanel(props) {
   const { children, value, index, ...other } = props;
 
@@ -59,11 +60,11 @@ export default function StepReward() {
   };
 
   return (
-    <div className={styles.rewardpage}>
-      <Link href="/">
+    <div className={`${styles.rewardpage} pb-28`}>
+      <Link href="pointReward">
         <a>
           <div className="flex items-center gap-4 px-5 pt-3 mb-7">
-            <Image src={lefticon} alt="" />
+            <WestIcon />
             <p className="text-2xl font-medium " style={{ color: "#333333" }}>
               পয়েন্ট রিওয়ার্ড
             </p>
@@ -73,6 +74,17 @@ export default function StepReward() {
 
       <Box>
         <Tabs
+          className=" mr-2 ml-2"
+          sx={{
+            "& .MuiTabs-flexContainer": {
+              display: "flex",
+              justifyContent: "space-between",
+            },
+            "& button": { padding: "0 20px" },
+            // "& button": { borderBottom: "2px solid " },
+
+            // "& .MuiButtonBase-root": { paddingRight: 0 },
+          }}
           value={value}
           onChange={handleChange}
           variant="scrollable"
@@ -80,7 +92,6 @@ export default function StepReward() {
           scrollButtons
           allowScrollButtonsMobile
           aria-label="scrollable auto tabs example"
-          className=" flex justify-between items-center "
         >
           <Tab className="normal-case	" label="Warrior" {...a11yProps(0)} />
           <Tab className="normal-case	" label=" Master " {...a11yProps(1)} />
@@ -89,7 +100,6 @@ export default function StepReward() {
             label="Grand Master "
             {...a11yProps(2)}
           />
-
           <Tab className="normal-case 	" label=" Champion" {...a11yProps(3)} />
           <Tab className="normal-case	" label="Legend" {...a11yProps(4)} />
         </Tabs>

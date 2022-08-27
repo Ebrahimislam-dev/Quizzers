@@ -10,7 +10,7 @@ import globalicon from "../../Media/icons/Globe.png";
 import bangladesicon from "../../Media/icons/bangladeshflag.png";
 import entertainmenticon from "../../Media/icons/entertainment.png";
 import RewardSlider from "./RewardSlider";
-
+import ArrowForwardIosIcon from "@mui/icons-material/ArrowForwardIos";
 import Image from "next/image";
 import BottomHeader from "../BottomHeader/BottomHeader";
 import Link from "next/link";
@@ -23,70 +23,89 @@ const HomePage = () => {
         <Header></Header>
       </section>
       <section>
-        <div className="relative pb-10 px-7 ">
-          <div className="absolute flex items-center justify-between px-5 bg-white shadow-md w-80 sm:w-64 rounded-2xl -top-20 py-5 ">
-            <div>
-              <h6
-                className="text-xs font-medium leading-5 "
-                style={{ color: "#666666", opacity: "0.55" }}
-              >
-                আপনার লেভেল : Warrior
-              </h6>
-              <h5 className="text-sm font-semibold leading-5 ">
-                রিওয়ার্ড পয়েন্ট : ১৫০০
-              </h5>
-            </div>
-            <div>
-              {/* <Image
-                className="w-14 h-14 "
-                src={rewardTropy}
-                alt="Reward Tropy"
-              /> */}
-              <TropyAnimation />
-            </div>
-          </div>
-        </div>
-        <div className="px-3 ">
+        <div className="px-3 mt-14 ">
           <RewardSlider></RewardSlider>
         </div>
       </section>
       <section className="pb-16 sm:pb:2">
         <Link href="packagepage">
           <a>
-            <div className="flex items-center justify-between pl-6 pr-10 cursor-pointer pt-9">
-              <p className="text-base font-semibold leading-5 ">
+            <div className="flex items-center justify-between pl-6 pr-6 cursor-pointer pt-9">
+              <p className="text-base 2xl:text-lg font-semibold leading-5 ">
                 কুইজ ক্যাটাগরি পছন্দ করুন
               </p>
-              <Image className="" src={righticonBlack} alt="icon" />
+              {/* <Image className="" src={righticonBlack} alt="icon" /> */}
+              <ArrowForwardIosIcon />
             </div>
           </a>
         </Link>
 
-        <div className="grid grid-cols-3 pt-5 pl-6 pr-5 gap-x-3 gap-y-4 ">
-          <div className={style.category}>
-            <Image src={sporticon} alt="sporticon" />
-            <p>খেলাধুলা</p>
-          </div>
-          <div className={style.category}>
-            <Image src={infoicon} alt="infoicon" />
-            <p>তথ্যমূলক</p>
-          </div>
-          <div className={`gap-y-2 ${style.category}`}>
-            <Image src={googlilicon} alt="googlilicon" />
-            <p>গুগলি</p>
-          </div>
-          <div className={style.category}>
-            <Image src={globalicon} alt="globalicon" />
-            <p>আন্তর্জাতিক</p>
-          </div>
-          <div className={style.category}>
-            <Image src={bangladesicon} alt="bangladesicon" />
-            <p> বাংলাদেশ</p>
-          </div>
-          <div className={`gap-y-2 ${style.category}`}>
-            <Image src={entertainmenticon} alt="entertainmenticon" />
-            <p>এন্টারটেইন</p>
-          </div>
+        <div className="grid grid-cols-3 pt-5 pb-24  gap-4 mx-5 ">
+          <Link href="sportQuiz">
+            <a>
+              <div className={style.category}>
+                <div className=" w-14 h-14">
+                  <Image src={sporticon} alt="sporticon" />
+                </div>
+                <p>খেলাধুলা</p>
+              </div>
+            </a>
+          </Link>
+          <Link href="sportQuiz">
+            <a>
+              <div className={style.category}>
+                <div className=" w-14 h-14">
+                  <Image src={infoicon} alt="infoicon" />
+                </div>
+
+                <p>তথ্যমূলক</p>
+              </div>
+            </a>
+          </Link>
+          <Link href="sportQuiz">
+            <a>
+              <div className={`gap-y-2 ${style.category}`}>
+                <div className=" w-12 h-12">
+                  <Image src={googlilicon} alt="googlilicon" />
+                </div>
+
+                <p>গুগলি</p>
+              </div>
+            </a>
+          </Link>
+          <Link href="bdquiz">
+            <a>
+              <div className={style.category}>
+                <div className=" w-14 h-14">
+                  <Image src={globalicon} alt="globalicon" />
+                </div>
+
+                <p>আন্তর্জাতিক</p>
+              </div>
+            </a>
+          </Link>
+          <Link href="bdquiz">
+            <a>
+              <div className={`gap-y-2 ${style.category}`}>
+                <div className=" w-12 h-12 mb-1">
+                  <Image src={bangladesicon} alt="bangladesicon" />
+                </div>
+
+                <p> বাংলাদেশ</p>
+              </div>
+            </a>
+          </Link>
+          <Link href="bdquiz">
+            <a>
+              <div className={`gap-y-2 ${style.category}`}>
+                <div className=" w-12 h-12">
+                  <Image src={entertainmenticon} alt="entertainmenticon" />
+                </div>
+
+                <p>এন্টারটেইন</p>
+              </div>
+            </a>
+          </Link>
         </div>
       </section>
       {/*   <section className="">

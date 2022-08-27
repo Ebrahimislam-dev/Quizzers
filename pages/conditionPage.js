@@ -1,16 +1,12 @@
 import * as React from "react";
-import Accordion from "@mui/material/Accordion";
-import AccordionSummary from "@mui/material/AccordionSummary";
-import AccordionDetails from "@mui/material/AccordionDetails";
-import Typography from "@mui/material/Typography";
-import ExpandMoreIcon from "@mui/icons-material/ExpandMore";
+
 import styles from "../styles/common.module.css";
-import lefticon from "../Media/icons/lefticon.png";
+
 import conditionpageimg from "../Media/images/codtionpageimg.png";
 import Link from "next/link";
 import Image from "next/image";
 import ArrowCircleRightRoundedIcon from "@mui/icons-material/ArrowCircleRightRounded";
-
+import WestIcon from "@mui/icons-material/West";
 export default function conditionPage() {
   return (
     <div className={styles.faqspage}>
@@ -18,7 +14,7 @@ export default function conditionPage() {
         <Link href="/pointReward">
           <a>
             <div className="flex items-center gap-4 px-5 pt-3 ">
-              <Image src={lefticon} alt="arrow" />
+              <WestIcon />
               <p className="text-2xl font-medium " style={{ color: "#333333" }}>
                 শর্তাবলী
               </p>
@@ -27,11 +23,11 @@ export default function conditionPage() {
         </Link>
       </div>
       <div className="mt-6 mb-24 mx-6" style={{ color: "#2E3E5C" }}>
-        <div>
-          <Image src={conditionpageimg} alt="top banner" />
+        <div className=" w-full">
+          <Image className=" w-full" src={conditionpageimg} alt="top banner" />
         </div>
         <div className=" bg-white px-3 py-4 mt-5">
-          <p className=" text-xs font-normal text-justify">
+          <p className=" text-xs 2xl:text-sm font-normal text-justify">
             কুইজার্স গেম নিয়মিত খেলে পয়েন্ট অর্জন করুন আর আপনার পয়েন্টগুলো
             ব্যবহার করে কুইজার্স রিওয়ার্ড সংগ্রহ করুন। পয়েন্ট অর্জনের মাধ্যমে
             আপনি একটি নির্দিষ্ট রিওয়ার্ড লেভেলে অবস্থান করবেন।

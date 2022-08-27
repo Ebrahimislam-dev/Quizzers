@@ -19,8 +19,10 @@
     "next": "12.2.5",
     "react": "18.2.0",
     "react-dom": "18.2.0",
-    "react-slick": "^0.29.0",
+    "react-image-select": "^1.0.1",
     "react-lottie": "^1.2.3",
+    "react-multiple-choice": "^2.0.2",
+    "react-slick": "^0.29.0",
     "slick-carousel": "^1.8.1"
   },
   "devDependencies": {

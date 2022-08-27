@@ -11,6 +11,7 @@ import { useRouter } from "next/router";
 const useStyles = makeStyles({
   root: {
     width: "100%",
+   
     display: "flex",
     justifyContent: "space-around",
     alignItems: "center",
@@ -39,7 +40,7 @@ export default function BottomHeader() {
         defaultValue="/"
         value={value}
         onChange={handleChange}
-        // className={classes.root}
+        //  className={classes.root}
       >
         {" "}
         <BottomNavigationAction label="Home" value="/" icon={<HomeIcon />} />

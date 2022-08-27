@@ -43,7 +43,18 @@ const PointDrawer = (props) => {
 
   return (
     <Root>
-      <CssBaseline />
+      <CssBaseline
+        sx={{
+          "& .MuiBox-root   ": {
+            borderRadius: "20px 20px 0 0",
+            // border: "10px solid #378B95",
+          },
+          "&  .css-151dxxb  ": {
+            borderRadius: "20px 20px 0 0",
+            // border: "10px solid #378B95",
+          },
+        }}
+      />
       <Global
         styles={{
           ".MuiDrawer-root > .MuiPaper-root": {
@@ -65,6 +76,7 @@ const PointDrawer = (props) => {
         ModalProps={{
           keepMounted: true,
         }}
+
         // sx={{ border: "20px solid #2e3e5c;", borderRadius: "20px 20px 0 0" }}
       >
         <StyledBox
@@ -90,7 +102,10 @@ const PointDrawer = (props) => {
           <div className="flex flex-col items-center justify-center text-center gap-y-3 ">
             <div className={`${styles.drawercurve}  `}></div>
             <p className="text-2xl mt-5 font-medium ">পর্যাপ্ত পয়েন্ট নেই</p>
-            <Image src={rewardimage} alt="rewardimage" />
+            <div className=" w-40">
+              <Image src={rewardimage} alt="rewardimage" />
+            </div>
+
             <p className="text-sm font-medium">
               রিয়ার্ড সংগ্রহ করার জন্য আপনার পয়েন্ট নেই। নিয়মিত কুইজাস গেম খেলে
               পয়েন্ট অর্জন করুন

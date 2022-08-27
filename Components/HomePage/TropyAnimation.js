@@ -14,7 +14,7 @@ export default function TropyAnimation() {
 
   return (
     <div>
-      <Lottie options={defaultOptions} height={70} width={70} />
+      <Lottie options={defaultOptions} height={70} width={100} />
     </div>
   );
 }

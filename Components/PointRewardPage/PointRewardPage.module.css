@@ -1,11 +1,12 @@
 .rewardpage {
+  max-width: 500px;
   width: 100%;
-  max-width: 375px;
+  margin: 0 auto;
   height: 100%;
-  overflow-y: scroll;
-  background-color: #f9fcff;
+  /* overflow-y: scroll; */
+  background-color: #ffffff;
   position: relative;
-   /* border: 2px solid red;  */
+  /* border: 2px solid red;  */
 }
 
 /* Hide scrollbar for Chrome, Safari and Opera */
@@ -15,39 +16,47 @@
 
 /* Hide scrollbar for IE, Edge and Firefox */
 .rewardpage {
-  -ms-overflow-style: none; /* IE and Edge */
-  scrollbar-width: none; /* Firefox */
+  -ms-overflow-style: none;
+  /* IE and Edge */
+  scrollbar-width: none;
+  /* Firefox */
 }
+
 .rewardHeader {
   background-image: linear-gradient(180deg, #1b75bb 0%, #205680 100%);
   border-radius: 16px;
   width: 100%;
   height: 181px;
 }
+
 .masterRewardHeader {
   background: linear-gradient(180deg, #384C5C 0%, #2E3A43 100%);
   border-radius: 16px;
   width: 100%;
   height: 181px;
 }
+
 .grandmasterRewardHeader {
   background: linear-gradient(180deg, #378A95 0%, #3A7C9E 100%);
   border-radius: 16px;
   width: 100%;
   height: 181px;
 }
+
 .championRewardHeader {
   background: linear-gradient(180deg, #555965 0%, #707FA7 100%);
   border-radius: 16px;
   width: 100%;
   height: 181px;
 }
+
 .legendRewardHeader {
   background: linear-gradient(180deg, #9747FF 0%, #4C67AD 100%);
   border-radius: 16px;
   width: 100%;
   height: 181px;
 }
+
 .collectionBtn {
   background: #4c67ad;
   border-radius: 20px;
@@ -57,6 +66,7 @@
   font-size: 12px;
   line-height: 15px;
 }
+
 .rewardCard {
   box-shadow: 10px 24px 54px rgba(15, 13, 35, 0.04);
   border-radius: 16px;
@@ -64,6 +74,7 @@
   margin-bottom: 5px;
   padding: 5px 8px;
 }
+
 .faqsCard {
   margin-left: 27px;
   margin-right: 24px;
@@ -71,6 +82,7 @@
   background: #ffffff;
   box-shadow: 10px 24px 54px rgba(15, 13, 35, 0.04);
 }
+
 .faqInfo {
   font-weight: 500;
   font-size: 13px;
@@ -83,10 +95,12 @@
   border-bottom: 1px solid #efefef;
   cursor: pointer;
 }
+
 .drawer {
   max-width: 375px !important;
 
 }
+
 .drawercurve {
   background: #fff;
   width: 67px;
@@ -99,20 +113,34 @@
   /* border-radius: 20px 20px 0 0; */
   transform: translatex(-50%);
 }
-.pointdrawerRootpage{
+
+.pointdrawerRootpage {
   border-radius: 20px 20px 0 0 !important;
-  
+
 }
-/* }
-@media only screen and (min-device-width: 375px) and (max-device-width: 480px) {
-  .drawercurve {
-    background: #fff;
-    width: 67px;
-    z-index: 19;
-    position: absolute;
-    top: -8px;
-    height: 20px;
-    left: 44%;
-    border-radius: 50%;
+
+
+@media only screen and (min-device-width:1536px) {
+  .faqInfo {
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 18px;
+    padding: 23px 5px 23px 20px;
+    display: flex;
+    /* justify-content: space-between; */
+
+    align-items: center;
+    border-bottom: 1px solid #efefef;
+    cursor: pointer;
   }
-} */
+
+  .collectionBtn {
+    background: #4c67ad;
+    border-radius: 20px;
+    color: #ffffff;
+    padding: 10px 17px;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 18px;
+  }
+}

@@ -3,15 +3,16 @@ import Link from "next/link";
 import lefticon from "../../Media/icons/lefticon.png";
 import style from "./HomePage.module.css";
 import Checkbox from "@mui/material/Checkbox";
+import WestIcon from "@mui/icons-material/West";
 function Packageindex() {
   return (
-    <div className={`${style.packagepage} border-2 px-8 `}>
+    <div className={`${style.packagepage}  px-8 `}>
       <div className="pb-10  " style={{ height: "100%" }}>
         <div>
           <Link href="/">
             <a>
               <div className="flex items-center gap-4 pt-3 ">
-                <Image src={lefticon} alt="" />
+                <WestIcon />
                 <p
                   className="text-2xl font-medium "
                   style={{ color: "#333333" }}
@@ -23,10 +24,10 @@ function Packageindex() {
           </Link>
         </div>
         <div className="mt-8 ">
-          <h2 className="text-lg font-semibold ">
+          <h2 className="text-lg 2xl:text-2xl font-semibold  ">
             Subscription Packages Modality
           </h2>
-          <h4 className="text-sm font-normal ">
+          <h4 className="text-sm 2xl:text-lg font-normal pt-2 ">
             This game offering 2 kinds of subscription
           </h4>
         </div>
