@@ -19,15 +19,31 @@ import BorderLinearProgress from "./BorderLinearProgress";
 // import ImageSelect from "react-image-select";
 
 function SportQuizPage() {
-  const [isActive, setIsActive] = useState(false);
+  const [isChecked, setChecked] = useState(false);
+  const [value, setValue] = useState("");
+  // const [error, setError] = React.useState(false);
+  // const [helperText, setHelperText] = React.useState("Choose wisely");
 
-  const handleClick = (id) => {
-    // 👇️ toggle
+  const handleRadioChange = (event) => {
+    setValue(event.target.value);
+    setChecked(event.target.checked);
+    // setHelperText(" ");
+    // setError(false);
+  };
 
-    setIsActive((current) => !current);
+  const handleSubmit = (event) => {
+    event.preventDefault();
 
-    // 👇️ or set to true
-    // setIsActive(true);
+    // if (value === "best") {
+    //   setHelperText("You got it!");
+    //   setError(false);
+    // } else if (value === "worst") {
+    //   setHelperText("Sorry, wrong answer!");
+    //   setError(true);
+    // } else {
+    //   setHelperText("Please select an option.");
+    //   setError(true);
+    // }
   };
   return (
     <div className={`${style.packagepage}  px-5 `}>
@@ -78,23 +94,63 @@ function SportQuizPage() {
             এখানে কোনটি সাকিব আল হাসান চোখ ?{" "}
           </h4>
         </div>
-        {/* <select>
-          <option value="">
-
-            
-          </option>
-        </select> */}
-        {/* <ImageSelect
-          images={[
-            "../../../Media/images/sakiboption1.png",
-            "../../../Media/images/sakiboption1.png",
-          ]}
-          width={20}
-          height={20}
-          // defaultIndex={2} // will select pear.png
-          onChange={this._handleChange}
-        /> */}
-        <div className=" flex justify-around items-center">
+        <form onSubmit={handleSubmit} className=" ">
+          <FormControl variant="standard" className="  w-full">
+            <RadioGroup
+              aria-labelledby="demo-error-radios"
+              name="quiz"
+              className=" w-10/12 "
+              value={value}
+              onChange={handleRadioChange}
+            >
+              <FormControlLabel
+                className={`p-6  mt-10 ml-5 text-center flex gap-x-10 w-full   bg-white shadow-sm `}
+                style={{
+                  border: isChecked
+                    ? "1.2px solid #D3D3D3"
+                    : "3px solid #4C67AD",
+                  borderRadius: "14px",
+                  width: "100%",
+                }}
+                value="sakiboption1"
+                control={
+                  <Radio
+                    color="success"
+                    style={{
+                      display: "none",
+                    }}
+                  />
+                }
+                label={
+                  <Image className="" src={sakiboption1} alt="sakiboption1" />
+                }
+              />
+              <FormControlLabel
+                className="p-6 mt-6 ml-5 text-center  flex gap-x-10 w-full bg-white shadow-sm "
+                style={{
+                  border: isChecked
+                    ? "1.2px solid #D3D3D3"
+                    : "3px solid #4C67AD",
+                  borderRadius: "14px",
+                  width: "100%",
+                }}
+                value="sakiboption2"
+                control={
+                  <Radio
+                    color="success"
+                    style={{
+                      display: "none",
+                    }}
+                  />
+                }
+                label={
+                  <Image className="" src={sakiboption2} alt="sakiboption1" />
+                }
+              />
+            </RadioGroup>
+          </FormControl>
+        </form>
+        {/* <div className=" flex justify-around items-center">
           <div
             style={{
               border: isActive ? "1.2px solid #D3D3D3" : "2px solid #91f100",
@@ -115,7 +171,7 @@ function SportQuizPage() {
           >
             <Image className="" src={sakiboption2} alt="sakiboption2" />
           </div>
-        </div>
+        </div> */}
 
         <p className="text-xs 2xl:text-sm font-normal text-center mt-7">
           সঠিক উত্তর বাছাই করুন

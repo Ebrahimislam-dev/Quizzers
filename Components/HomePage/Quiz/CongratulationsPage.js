@@ -1,6 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
-import congoreward from "../../../Media/images/congoreward.png";
+
 import style from "../HomePage.module.css";
 import CloseIcon from "@mui/icons-material/Close";
 import ConratstropyAnimation from "./ConratstropyAnimation";

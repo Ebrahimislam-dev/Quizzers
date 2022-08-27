@@ -2,7 +2,7 @@ import { useState } from "react";
 import Image from "next/image";
 import Link from "next/link";
 import lefticon from "../../../Media/icons/lefticon.png";
-import paddaBridge from "../../../Media/images/PaddaBridge.png";
+import paddaBridge from "../../../Media/images/paddaBridge.png";
 import style from "../HomePage.module.css";
 
 import Box from "@mui/material/Box";
