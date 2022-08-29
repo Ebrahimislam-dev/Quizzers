@@ -22,6 +22,7 @@
     "react-image-select": "^1.0.1",
     "react-lottie": "^1.2.3",
     "react-multiple-choice": "^2.0.2",
+    "react-otp-input": "^2.4.0",
     "react-slick": "^0.29.0",
     "slick-carousel": "^1.8.1"
   },

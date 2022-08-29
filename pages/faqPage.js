@@ -11,11 +11,11 @@ import Image from "next/image";
 import WestIcon from "@mui/icons-material/West";
 export default function faqPage() {
   return (
-    <div className={styles.faqspage}>
+    <div className={`${styles.faqspage} px-6`}>
       <div>
         <Link href="/pointReward">
           <a>
-            <div className="flex items-center gap-4 px-5 pt-3 ">
+            <div className="flex items-center gap-4  pt-3 ">
               <WestIcon />
               <p className="text-2xl font-medium " style={{ color: "#333333" }}>
                 সচরাচর জিজ্ঞাসা
@@ -24,10 +24,10 @@ export default function faqPage() {
           </a>
         </Link>
       </div>
-      <div className="mt-6 mb-24 mx-6">
+      <div className="mt-6 pb-24   ">
         <Accordion
-          style={{ color: " #2E3E5C" }}
-          className=" bg-white shadow-md p-3 flex flex-col justyfy-between "
+          style={{ color: " #2E3E5C", padding: "12px" }}
+          className=" bg-white shadow-md  flex flex-col justyfy-between "
           defaultExpanded={true}
         >
           <AccordionSummary
@@ -47,8 +47,8 @@ export default function faqPage() {
           </AccordionDetails>
         </Accordion>
         <Accordion
-          style={{ color: " #2E3E5C" }}
-          className=" bg-white shadow-md p-3 flex flex-col justyfy-between "
+              style={{ color: " #2E3E5C", padding: "12px" }}
+          className=" bg-white shadow-md flex flex-col justyfy-between "
         >
           <AccordionSummary
             expandIcon={<ExpandMoreIcon />}
@@ -68,8 +68,8 @@ export default function faqPage() {
           </AccordionDetails>
         </Accordion>
         <Accordion
-          style={{ color: " #2E3E5C" }}
-          className=" bg-white shadow-md p-3 flex flex-col justyfy-between "
+              style={{ color: " #2E3E5C", padding: "12px" }}
+          className=" bg-white shadow-md flex flex-col justyfy-between "
         >
           <AccordionSummary
             expandIcon={<ExpandMoreIcon />}
@@ -87,8 +87,8 @@ export default function faqPage() {
           </AccordionDetails>
         </Accordion>
         <Accordion
-          style={{ color: " #2E3E5C" }}
-          className=" bg-white shadow-md p-3 flex flex-col justyfy-between "
+              style={{ color: " #2E3E5C", padding: "12px" }}
+          className=" bg-white shadow-md flex flex-col justyfy-between "
         >
           <AccordionSummary
             expandIcon={<ExpandMoreIcon />}
@@ -106,8 +106,8 @@ export default function faqPage() {
           </AccordionDetails>
         </Accordion>
         <Accordion
-          style={{ color: " #2E3E5C" }}
-          className=" bg-white shadow-md p-3 flex flex-col justyfy-between "
+              style={{ color: " #2E3E5C", padding: "12px" }}
+          className=" bg-white shadow-md flex flex-col justyfy-between "
         >
           <AccordionSummary
             expandIcon={<ExpandMoreIcon />}
@@ -125,8 +125,8 @@ export default function faqPage() {
           </AccordionDetails>
         </Accordion>
         <Accordion
-          style={{ color: " #2E3E5C" }}
-          className=" bg-white shadow-md p-3 flex flex-col justyfy-between "
+              style={{ color: " #2E3E5C", padding: "12px" }}
+          className=" bg-white shadow-md flex flex-col justyfy-between "
         >
           <AccordionSummary
             expandIcon={<ExpandMoreIcon />}
@@ -144,8 +144,8 @@ export default function faqPage() {
           </AccordionDetails>
         </Accordion>
         <Accordion
-          style={{ color: " #2E3E5C" }}
-          className=" bg-white shadow-md p-3 flex flex-col justyfy-between "
+              style={{ color: " #2E3E5C", padding: "12px" }}
+          className=" bg-white shadow-md flex flex-col justyfy-between "
         >
           <AccordionSummary
             expandIcon={<ExpandMoreIcon />}
@@ -163,8 +163,8 @@ export default function faqPage() {
           </AccordionDetails>
         </Accordion>
         <Accordion
-          style={{ color: " #2E3E5C" }}
-          className=" bg-white shadow-md p-3 flex flex-col justyfy-between "
+              style={{ color: " #2E3E5C", padding: "12px" }}
+          className=" bg-white shadow-md flex flex-col justyfy-between "
         >
           <AccordionSummary
             expandIcon={<ExpandMoreIcon />}
@@ -182,8 +182,8 @@ export default function faqPage() {
           </AccordionDetails>
         </Accordion>
         <Accordion
-          style={{ color: " #2E3E5C" }}
-          className=" bg-white shadow-md p-3 flex flex-col justyfy-between "
+              style={{ color: " #2E3E5C", padding: "12px" }}
+          className=" bg-white shadow-md flex flex-col justyfy-between "
         >
           <AccordionSummary
             expandIcon={<ExpandMoreIcon />}

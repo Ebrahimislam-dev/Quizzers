@@ -26,35 +26,35 @@
   background-image: linear-gradient(180deg, #1b75bb 0%, #205680 100%);
   border-radius: 16px;
   width: 100%;
-  height: 181px;
+  height: 200px;
 }
 
 .masterRewardHeader {
   background: linear-gradient(180deg, #384C5C 0%, #2E3A43 100%);
   border-radius: 16px;
   width: 100%;
-  height: 181px;
+  height: 200px;
 }
 
 .grandmasterRewardHeader {
   background: linear-gradient(180deg, #378A95 0%, #3A7C9E 100%);
   border-radius: 16px;
   width: 100%;
-  height: 181px;
+  height: 200px;
 }
 
 .championRewardHeader {
   background: linear-gradient(180deg, #555965 0%, #707FA7 100%);
   border-radius: 16px;
   width: 100%;
-  height: 181px;
+  height: 200px;
 }
 
 .legendRewardHeader {
   background: linear-gradient(180deg, #9747FF 0%, #4C67AD 100%);
   border-radius: 16px;
   width: 100%;
-  height: 181px;
+  height: 200px;
 }
 
 .collectionBtn {

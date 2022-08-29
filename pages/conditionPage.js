@@ -9,7 +9,7 @@ import ArrowCircleRightRoundedIcon from "@mui/icons-material/ArrowCircleRightRou
 import WestIcon from "@mui/icons-material/West";
 export default function conditionPage() {
   return (
-    <div className={styles.faqspage}>
+    <div className={`${styles.faqspage} `}>
       <div>
         <Link href="/pointReward">
           <a>
@@ -22,7 +22,7 @@ export default function conditionPage() {
           </a>
         </Link>
       </div>
-      <div className="mt-6 mb-24 mx-6" style={{ color: "#2E3E5C" }}>
+      <div className="mt-6 pb-24 px-6" style={{ color: "#2E3E5C" }}>
         <div className=" w-full">
           <Image className=" w-full" src={conditionpageimg} alt="top banner" />
         </div>

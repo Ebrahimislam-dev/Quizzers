@@ -65,59 +65,81 @@ function BdQuizQus() {
 
             <BorderLinearProgress value={1300} height={22} />
           </Box>
-        </div> <div>
-            <div className=" mt-9 ">
-              <Image className="w-full" src={paddaBridge} alt="icon" />
-            </div>
-            {/* <p>{data.qid}</p> */}
-            <div className="mt-8 ml-5 ">
-              <p className="text-sm font-medium tracking-wider text-gray-300 ">
-                QUESTION 1 OF 150
-              </p>
-              <h4 className="pt-2 text-xl font-medium ">
-                পদ্মা সেতুর পাইলিং গভীরতা কত ?
-              </h4>
-            </div>
-
-            <form className=" ">
-              <FormControl variant="standard" className="  w-full">
-                <RadioGroup
-                  aria-labelledby="demo-error-radios"
-                  name="quiz"
-                  className=" w-10/12 "
-                  // value={value}
-                  // onChange={handleRadioChange}
-                >
-                  <FormControlLabel
-                    className={`p-6  mt-10 ml-5 text-center flex gap-x-10 w-full   bg-white shadow-sm `}
-                    style={{
-                      border: "1.2px solid #D3D3D3",
-                      borderRadius: "14px",
-                      width: "100%",
-                    }}
-                    value="৩৮৩ ফুট"
-                    control={<Radio color="success" />}
-                    label="৩৮৩ ফুট"
-                  />
-                  <FormControlLabel
-                    className="p-6 mt-6 ml-5 text-center  flex gap-x-10 w-full bg-white shadow-sm "
-                    style={{
-                      border: "1.2px solid #D3D3D3",
-                      borderRadius: "14px",
-                      width: "100%",
-                    }}
-                    value="৩৮৭ ফুট"
-                    control={<Radio color="success" />}
-                    label="৩৮৭ ফুট"
-                  />
-                </RadioGroup>
-              </FormControl>
-            </form>
+        </div>{" "}
+        <div>
+          <div className=" mt-9 ">
+            <Image className="w-full" src={paddaBridge} alt="icon" />
           </div>
+          {/* <p>{data.qid}</p> */}
+          <div className="mt-8 ml-5 ">
+            <p className="text-sm font-medium tracking-wider text-gray-300 ">
+              QUESTION 1 OF 150
+            </p>
+            <h4 className="pt-2 text-xl font-medium ">
+              পদ্মা সেতুর পাইলিং গভীরতা কত ?
+            </h4>
+          </div>
+
+          <form className=" ">
+            <FormControl
+              variant="standard"
+              className=" w-full "
+              sx={{
+                paddingLeft: "30px",
+                paddingRight: "30px",
+                // "& .MuiFormGroup-root": {
+
+                // },
+              }}
+            >
+              <RadioGroup
+                aria-labelledby="demo-error-radios"
+                name="quiz"
+                className={`w-full  `}
+                // value={value}
+                // onChange={handleRadioChange}
+              >
+                <FormControlLabel
+                  sx={{
+                    marginLeft: "0px",
+                    // "& .MuiFormControlLabel-root": {
+
+                    // },
+                  }}
+                  className={`${style.quizfield} p-6 mt-10  text-center flex gap-x-10   bg-white shadow-sm `}
+                  style={{
+                    border: "1.2px solid #D3D3D3",
+                    borderRadius: "14px",
+                    width: "100%",
+                  }}
+                  value="৩৮৩ ফুট"
+                  control={<Radio color="success" />}
+                  label="৩৮৩ ফুট"
+                />
+                <FormControlLabel
+                  sx={{
+                    marginLeft: "0px",
+                    // "& .MuiFormControlLabel-root": {
+
+                    // },
+                  }}
+                  className={`${style.quizfield} p-6  mt-10  text-center flex gap-x-10   bg-white shadow-sm `}
+                  style={{
+                    border: "1.2px solid #D3D3D3",
+                    borderRadius: "14px",
+                    width: "100%",
+                  }}
+                  value="৩৮৭ ফুট"
+                  control={<Radio color="success" />}
+                  label="৩৮৭ ফুট"
+                />
+              </RadioGroup>
+            </FormControl>
+          </form>
+        </div>
         {/* {quizData.map((data) => {
          
         })} */}
-
         <p className="text-xs 2xl:text-sm font-normal text-center mt-7">
           সঠিক উত্তর বাছাই করুন
         </p>

@@ -1,11 +1,10 @@
 module.exports = {
-  content: [
-    "./pages/**/*.{js,ts,jsx,tsx}",
-    "./components/**/*.{js,ts,jsx,tsx}",
-  ],
+  darkMode: "class",
+  purge: ["./pages/**/*.{js}", "./Components/**/*.{js,ts,jsx,tsx}"],
   theme: {
     extend: {},
     screens: {
+      xs: { min: "280x", max: "370px" },
       sm: { min: "375x", max: "480px" },
       // => @media (min-width: 640px and max-width: 767px) { ... }
 

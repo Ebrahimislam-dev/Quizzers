@@ -26,7 +26,7 @@ const Header = () => {
           <Link href="/pointReward">
             <a>
               <div
-                className={`flex justify-between  items-center gap-2 p-2   focus:ring-1 focus:ring-gray-100 ${style.rewardBtn}`}
+                className={`flex justify-center gap-2  items-center  py-2 px-4   focus:ring-1 focus:ring-gray-100 ${style.rewardBtn}`}
               >
                 {/* <Image src={rewardicon} alt="reward icon" /> */}
                 <div>

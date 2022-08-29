@@ -1,26 +1,27 @@
-import { useRef, useState } from "react";
 import Image from "next/image";
 import Link from "next/link";
-import lefticon from "../../../Media/icons/lefticon.png";
-import sakibimage from "../../../Media/images/sakibquiz.png";
+import { useState } from "react";
 import sakiboption1 from "../../../Media/images/sakiboption1.png";
 import sakiboption2 from "../../../Media/images/sakiboption2.png";
+import sakibimage from "../../../Media/images/sakibquiz.png";
 import style from "../HomePage.module.css";
 
-import Box from "@mui/material/Box";
 import AccessTimeIcon from "@mui/icons-material/AccessTime";
+import Box from "@mui/material/Box";
 
 import WestIcon from "@mui/icons-material/West";
+import FormControl from "@mui/material/FormControl";
+import FormControlLabel from "@mui/material/FormControlLabel";
 import Radio from "@mui/material/Radio";
 import RadioGroup from "@mui/material/RadioGroup";
-import FormControlLabel from "@mui/material/FormControlLabel";
-import FormControl from "@mui/material/FormControl";
 import BorderLinearProgress from "./BorderLinearProgress";
 // import ImageSelect from "react-image-select";
 
 function SportQuizPage() {
-  const [isChecked, setChecked] = useState(false);
+  const [isChecked, setChecked] = useState();
+  console.log(isChecked, "isChecked");
   const [value, setValue] = useState("");
+  console.log(value, "value");
   // const [error, setError] = React.useState(false);
   // const [helperText, setHelperText] = React.useState("Choose wisely");
 
@@ -86,7 +87,7 @@ function SportQuizPage() {
           <Image className="" src={sakibimage} alt="sakibimage" />
         </div>
 
-        <div className="mt-8 ">
+        <div className="mt-8 px-2 2xl:px-7 ">
           <p className="text-sm font-medium tracking-wider text-gray-300 ">
             QUESTION 2 OF 150
           </p>
@@ -95,22 +96,39 @@ function SportQuizPage() {
           </h4>
         </div>
         <form onSubmit={handleSubmit} className=" ">
-          <FormControl variant="standard" className="  w-full">
+          <FormControl
+            // sx={{
+            //   paddingLeft: "30px",
+            //   paddingRight: "30px",
+            // }}
+            variant="standard"
+            className="  w-full"
+          >
             <RadioGroup
               aria-labelledby="demo-error-radios"
               name="quiz"
-              className=" w-10/12 "
+              className=" flex justify-between items-center "
               value={value}
               onChange={handleRadioChange}
+              sx={{
+                display: "flex",
+                flexDirection: "row",
+                justifyContent: "center",
+                alignItems: "center",
+                gap: 2,
+              }}
             >
               <FormControlLabel
-                className={`p-6  mt-10 ml-5 text-center flex gap-x-10 w-full   bg-white shadow-sm `}
+                sx={{
+                  marginLeft: "0px",
+                }}
+                className={`px-3 2xl:px-6 py-12 mt-10  text-center    bg-white shadow-md `}
                 style={{
                   border: isChecked
                     ? "1.2px solid #D3D3D3"
-                    : "3px solid #4C67AD",
+                    : "2px solid  #4C67AD",
                   borderRadius: "14px",
-                  width: "100%",
+                  // width: "100%",
                 }}
                 value="sakiboption1"
                 control={
@@ -126,13 +144,17 @@ function SportQuizPage() {
                 }
               />
               <FormControlLabel
-                className="p-6 mt-6 ml-5 text-center  flex gap-x-10 w-full bg-white shadow-sm "
+                sx={{
+                  marginLeft: "0px",
+                  // "& .MuiFormControlLabel-root": {
+
+                  // },
+                }}
+                className={` px-3 2xl:px-6 py-12 mt-10  text-center flex  bg-white  shadow-md `}
                 style={{
-                  border: isChecked
-                    ? "1.2px solid #D3D3D3"
-                    : "3px solid #4C67AD",
+                  border: "1.2px solid #D3D3D3",
                   borderRadius: "14px",
-                  width: "100%",
+                  // width: "100%",
                 }}
                 value="sakiboption2"
                 control={

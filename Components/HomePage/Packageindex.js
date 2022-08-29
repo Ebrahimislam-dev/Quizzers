@@ -25,10 +25,10 @@ function Packageindex() {
         </div>
         <div className="mt-8 ">
           <h2 className="text-lg 2xl:text-2xl font-semibold  ">
-            Subscription Packages Modality
+            সাবস্ক্রিপশন প্যাকেজ মডালিটি
           </h2>
-          <h4 className="text-sm 2xl:text-lg font-normal pt-2 ">
-            This game offering 2 kinds of subscription
+          <h4 className="text-sm 2xl:text-base font-normal pt-2 ">
+            এই গেমটি দুই ধরণের সাবস্ক্রিপশন প্যাকেজ মডালিটি রয়েছে
           </h4>
         </div>
         <div

@@ -1,20 +1,16 @@
+import KeyboardArrowDownIcon from "@mui/icons-material/KeyboardArrowDown";
+import Image from "next/image";
+import Link from "next/link";
 import React from "react";
+import googlilicon from "../../Media/icons/Atom Bulb.png";
+import bangladesicon from "../../Media/icons/bangladeshflag.png";
+import infoicon from "../../Media/icons/Books and Apple.png";
+import entertainmenticon from "../../Media/icons/entertainment.png";
+import globalicon from "../../Media/icons/Globe.png";
+import sporticon from "../../Media/icons/Medal.png";
 import Header from "./Header";
 import style from "./HomePage.module.css";
-import rewardTropy from "../../Media/icons/reward_trophy.png";
-import righticonBlack from "../../Media/icons/righticonblack.png";
-import sporticon from "../../Media/icons/Medal.png";
-import infoicon from "../../Media/icons/Books and Apple.png";
-import googlilicon from "../../Media/icons/Atom Bulb.png";
-import globalicon from "../../Media/icons/Globe.png";
-import bangladesicon from "../../Media/icons/bangladeshflag.png";
-import entertainmenticon from "../../Media/icons/entertainment.png";
 import RewardSlider from "./RewardSlider";
-import ArrowForwardIosIcon from "@mui/icons-material/ArrowForwardIos";
-import Image from "next/image";
-import BottomHeader from "../BottomHeader/BottomHeader";
-import Link from "next/link";
-import TropyAnimation from "./TropyAnimation";
 
 const HomePage = () => {
   return (
@@ -28,18 +24,14 @@ const HomePage = () => {
         </div>
       </section>
       <section className="pb-16 sm:pb:2">
-        <Link href="packagepage">
-          <a>
-            <div className="flex items-center justify-between pl-6 pr-6 cursor-pointer pt-9">
-              <p className="text-base 2xl:text-lg font-semibold leading-5 ">
-                কুইজ ক্যাটাগরি পছন্দ করুন
-              </p>
-              {/* <Image className="" src={righticonBlack} alt="icon" /> */}
-              <ArrowForwardIosIcon />
-            </div>
-          </a>
-        </Link>
-
+        <div className="flex items-center justify-between pl-6 pr-6 cursor-pointer pt-9">
+          <p className="text-base 2xl:text-lg font-semibold leading-5 ">
+            কুইজ ক্যাটাগরি পছন্দ করুন
+          </p>
+          {/* <Image className="" src={righticonBlack} alt="icon" /> */}
+          {/* <ArrowForwardIosIcon /> */}
+          <KeyboardArrowDownIcon fontSize="large" />
+        </div>
         <div className="grid grid-cols-3 pt-5 pb-24  gap-4 mx-5 ">
           <Link href="sportQuiz">
             <a>

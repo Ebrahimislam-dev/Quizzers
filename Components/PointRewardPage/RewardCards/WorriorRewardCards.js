@@ -28,7 +28,7 @@ const WorriorRewardCards = ({ toggleDrawer }) => {
           </div>
 
           <div>
-            <p className=" text-xs 2xl:text-sm  font-normal text-center px-11 pb-6">
+            <p className=" text-xs 2xl:text-sm  font-normal text-center px-11  mt-1">
               পয়েন্ট ব্যবহার করলে লেভেলের অগ্রগতির উপর কোন প্রভাব পড়বে না
             </p>
           </div>

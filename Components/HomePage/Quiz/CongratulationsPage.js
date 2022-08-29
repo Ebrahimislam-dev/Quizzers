@@ -27,15 +27,15 @@ function CongratulationsPage() {
             </Link>
           </div>
         </div>
-        <div className={`${style.congratsBg} px-5 py-3 mt-6`}>
+        <div className={`${style.congratsBg} px-5 py-3 mt-8`}>
           {/* <Image className="pt-8 " src={congoreward} alt="Reward Tropy" /> */}
           <ConratstropyAnimation />
-          <p className="text-base mt-3 text-white font-mediumS">
+          <p className="text-base text-center mt-3 text-white font-mediumS">
             আপনি পয়েন্ট পেয়েছেন
           </p>
 
           <p
-            className="px-8 py-1 text-3xl font-medium "
+            className="px-8 text-center py-1 text-3xl font-medium "
             style={{
               background: "#FFD967",
               borderRadius: "8px",
@@ -46,7 +46,7 @@ function CongratulationsPage() {
           </p>
         </div>
 
-        <div className="grid grid-cols-2 gap-5 p-5 mb-6 ">
+        <div className="grid grid-cols-2 gap-5 p-5 pb-6 ">
           <div style={{ border: "2px solid #EFEEFC", borderRadius: "12px" }}>
             <div className="py-6 text-center px-7">
               <p className="pb-2 text-xs font-medium text-slate-400">

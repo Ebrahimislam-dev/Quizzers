@@ -139,7 +139,7 @@ const Profile = () => {
                 <LogoutOutlinedIcon />
               </div>
 
-              <p className=" font-medium text-lg">Unsubscribe </p>
+              <p className=" font-medium text-lg">আনসাবস্ক্রাইব </p>
             </div>
           </div>
         </div>
